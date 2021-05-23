@@ -4,6 +4,7 @@ import cli from "cli-ux";
 import CloneApp from "./command/clone";
 import TailwindApp from "./command/tailwind";
 import AirbnbApp from "./command/airbnb";
+import ReactQueryApp from "./command/react-query";
 
 class NewWebApp extends Command {
   static description = "New Web App Generator";
@@ -23,12 +24,16 @@ class NewWebApp extends Command {
       options: ["yes", "no"],
       description: "use ESLint, Prettier with Airbnb style (Typescript)",
     }),
+    ["react-query"]: flags.string({
+      options: ["yes", "no"],
+      description: "use react-query",
+    }),
   };
 
   // TODO: detect yarn/npm
   async run() {
     const { flags } = this.parse(NewWebApp);
-    let name, tailwind, airbnb;
+    let name, tailwind, airbnb, reactQuery;
 
     if (!flags.name) {
       name = await cli.prompt("What is your project name?", {
@@ -60,6 +65,18 @@ class NewWebApp extends Command {
       tailwind = flags.airbnb;
     }
 
+    if (!flags["react-query"]) {
+      reactQuery = await cli.prompt(
+        "Do you want to add react-query for data fetching?",
+        {
+          type: "normal",
+          default: "yes/no",
+        }
+      );
+    } else {
+      reactQuery = flags["react-query"];
+    }
+
     await CloneApp.run(["--name", name]);
 
     if (tailwind === "yes") {
@@ -68,6 +85,10 @@ class NewWebApp extends Command {
 
     if (airbnb === "yes") {
       await AirbnbApp.run(["--name", name]);
+    }
+
+    if (reactQuery === "yes") {
+      await ReactQueryApp.run(["--name", name]);
     }
   }
 }
