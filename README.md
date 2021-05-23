@@ -11,9 +11,8 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+* [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -61,10 +60,6 @@ OPTIONS
 # Commands
 
 <!-- commands -->
-
-```sh
-npx new-web-app -n web-app --airbnb=yes --react-hook-form=yes --react-query=yes --tailwind=yes
-```
 
 <!-- commandsstop -->
 
