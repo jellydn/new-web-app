@@ -31,6 +31,8 @@ class AirbnbApp extends Command {
     };`;
     writeFileSync(`${name}/.eslintrc.js`, linter);
 
+    exec(`cd ${name} && npx mrm@2 lint-staged`);
+
     cli.action.stop();
   }
 }

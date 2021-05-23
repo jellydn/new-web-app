@@ -6,6 +6,7 @@ import TailwindApp from "./command/tailwind";
 import AirbnbApp from "./command/airbnb";
 import ReactQueryApp from "./command/react-query";
 import ReactHookFormApp from "./command/react-hook-form";
+import { exec } from "shelljs";
 
 class NewWebApp extends Command {
   static description = "New Web App Generator";
@@ -41,21 +42,12 @@ class NewWebApp extends Command {
     let name, tailwind, airbnb, reactQuery, reactHookForm;
 
     if (!flags.name) {
-      name = await cli.prompt("What is your project name? (yes/no)", {
+      name = await cli.prompt("What is your project name?", {
         type: "normal",
         default: "vite-react-ts-app",
       });
     } else {
       name = flags.name;
-    }
-
-    if (!flags.tailwind) {
-      tailwind = await cli.prompt("Do you want to add TailwindCSS? (yes/no)", {
-        type: "normal",
-        default: "yes",
-      });
-    } else {
-      tailwind = flags.tailwind;
     }
 
     if (!flags.airbnb) {
@@ -82,12 +74,21 @@ class NewWebApp extends Command {
       reactQuery = flags["react-query"];
     }
 
-    if (!flags["react-query"]) {
+    if (!flags.tailwind) {
+      tailwind = await cli.prompt("Do you want to add TailwindCSS? (yes/no)", {
+        type: "normal",
+        default: "no",
+      });
+    } else {
+      tailwind = flags.tailwind;
+    }
+
+    if (!flags["react-hook-form"]) {
       reactHookForm = await cli.prompt(
         "Do you want to add react-hook-form? (yes/no)",
         {
           type: "normal",
-          default: "yes",
+          default: "no",
         }
       );
     } else {
@@ -110,6 +111,10 @@ class NewWebApp extends Command {
 
     if (reactHookForm === "yes") {
       await ReactHookFormApp.run(["--name", name]);
+    }
+
+    if (airbnb === "yes") {
+      exec(`cd ${name} && yarn prettier . --fix --write`);
     }
   }
 }

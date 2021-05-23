@@ -72,6 +72,7 @@ class ReactHookFormApp extends Command {
       </header>
       `,
     });
+
     cli.action.stop();
   }
 }

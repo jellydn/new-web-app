@@ -24,6 +24,7 @@ class CloneApp extends Command {
     cli.action.stop();
 
     cli.action.start("Install");
+    exec(`cd ${name} && git init`);
     exec(`cd ${name} && yarn install`);
     cli.action.stop();
   }
