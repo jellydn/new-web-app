@@ -19,12 +19,16 @@ class NewWebApp extends Command {
       options: ["yes", "no"],
       description: "use tailwind css",
     }),
+    airbnb: flags.string({
+      options: ["yes", "no"],
+      description: "use ESLint, Prettier with Airbnb style (Typescript)",
+    }),
   };
 
   // TODO: detect yarn/npm
   async run() {
     const { flags } = this.parse(NewWebApp);
-    let name, tailwind;
+    let name, tailwind, airbnb;
 
     if (!flags.name) {
       name = await cli.prompt("What is your project name?", {
@@ -44,13 +48,27 @@ class NewWebApp extends Command {
       tailwind = flags.tailwind;
     }
 
+    if (!flags.airbnb) {
+      airbnb = await cli.prompt(
+        "Do you want to add ESLint, Prettier with Airbnb style (Typescript)?",
+        {
+          type: "normal",
+          default: "yes/no",
+        }
+      );
+    } else {
+      tailwind = flags.airbnb;
+    }
+
     await CloneApp.run(["--name", name]);
 
     if (tailwind === "yes") {
       await TailwindApp.run(["--name", name]);
     }
 
-    await AirbnbApp.run(["--name", name]);
+    if (airbnb === "yes") {
+      await AirbnbApp.run(["--name", name]);
+    }
   }
 }
 
