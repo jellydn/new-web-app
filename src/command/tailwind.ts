@@ -4,8 +4,9 @@ import { replaceInFileSync } from "replace-in-file";
 import { writeFileSync } from "fs";
 import cli from "cli-ux";
 
+// https://tailwindcss.com/docs/guides/vue-3-vite#install-tailwind-via-npm
 class TailwindApp extends Command {
-  static description = "Scaffolding Your Vite Project";
+  static description = "Install Tailwind CSS with React and Vite";
 
   static flags = {
     name: flags.string({
@@ -18,7 +19,6 @@ class TailwindApp extends Command {
     const { flags } = this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
     cli.action.start(`Install Tailwind CSS with React and Vite`);
-    exec(`cd ${name}`);
     cli.action.stop();
 
     cli.action.start("Setting up Tailwind CSS");

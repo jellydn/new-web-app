@@ -3,6 +3,7 @@ import cli from "cli-ux";
 
 import CloneApp from "./command/clone";
 import TailwindApp from "./command/tailwind";
+import AirbnbApp from "./command/airbnb";
 
 class NewWebApp extends Command {
   static description = "New Web App Generator";
@@ -48,6 +49,8 @@ class NewWebApp extends Command {
     if (tailwind === "yes") {
       await TailwindApp.run(["--name", name]);
     }
+
+    await AirbnbApp.run(["--name", name]);
   }
 }
 
