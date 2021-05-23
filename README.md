@@ -19,7 +19,7 @@ $ npm install -g new-web-app
 $ new-web-app COMMAND
 running command...
 $ new-web-app (-v|--version|version)
-new-web-app/0.0.2-4 darwin-x64 node-v14.16.1
+new-web-app/0.0.2-5 darwin-x64 node-v14.16.1
 $ new-web-app --help [COMMAND]
 USAGE
   $ new-web-app COMMAND
