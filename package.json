@@ -1,0 +1,50 @@
+{
+  "name": "new-web-app",
+  "description": "Frontend app generator",
+  "version": "0.0.1",
+  "author": "Huynh Duc Dung @jellydn",
+  "bin": {
+    "new-web-app": "./bin/run"
+  },
+  "bugs": "https://github.com/jellydn/new-web-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2",
+    "degit": "^2.8.4",
+    "tslib": "^2.2.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.26.0",
+    "@types/degit": "^2.8.2",
+    "@types/node": "^15.6.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "prettier": "^2.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/jellydn/new-web-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "new-web-app"
+  },
+  "repository": "jellydn/new-web-app",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
