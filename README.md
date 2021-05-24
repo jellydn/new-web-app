@@ -29,10 +29,8 @@
 
 ## Why vitejs
 
-<iframe
-  src="https://twitter.com/i/status/1355379680275128321"
-  style="width:100%; height:300px;"
-></iframe>
+Thank you for awesome recording from Amjad Masad
+![./compare.gif](./compare.gif)
 
 In short, better performance, more detail on https://blog.replit.com/vite
 
