@@ -11,8 +11,9 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-* [Commands](#commands)
+
+- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+- [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -25,6 +26,15 @@
 - https://github.com/Rich-Harris/degit straightforward project scaffolding
 - https://github.com/shelljs/shelljs Unix shell commands for Node.js
 - https://github.com/wj42ftns/replace-in-files Replace text in one or more files or globs.
+
+## Why vitejs
+
+<iframe
+  src="https://twitter.com/i/status/1355379680275128321"
+  style="width:100%; height:300px;"
+></iframe>
+
+In short, better performance, more detail on https://blog.replit.com/vite
 
 ## Install
 
