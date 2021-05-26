@@ -11,8 +11,9 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-* [Commands](#commands)
+
+- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+- [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -58,14 +59,14 @@ USAGE
   $ new-web-app
 
 OPTIONS
-  -h, --help                show CLI help
-  -n, --name=name           folder name to create
-  -v, --version             show CLI version
-  --airbnb=yes|no           add ESLint, Prettier with Airbnb style (Typescript)
-  --react-hook-form=yes|no  add react-hook-form
-  --react-query=yes|no      add react-query
-  --storybook=yes|no        add storybook
-  --tailwind=yes|no         add tailwind css
+  -a, --airbnb=yes|no           add ESLint, Prettier with Airbnb style (Typescript)
+  -f, --react-hook-form=yes|no  add react-hook-form
+  -h, --help                    show CLI help
+  -n, --name=name               folder name to create
+  -q, --react-query=yes|no      add react-query
+  -s, --storybook=yes|no        add storybook
+  -t, --tailwind=yes|no         add tailwind css
+  -v, --version                 show CLI version
 ```
 
 <!-- usagestop -->
