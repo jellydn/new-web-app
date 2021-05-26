@@ -1,6 +1,7 @@
 import { Command, flags } from "@oclif/command";
 import cli from "cli-ux";
 import { exec } from "shelljs";
+import { replaceInFileSync } from "replace-in-file";
 
 import CloneApp from "./command/clone";
 import TailwindApp from "./command/tailwind";
@@ -20,22 +21,27 @@ class NewWebApp extends Command {
       description: "folder name to create",
     }),
     tailwind: flags.string({
+      char: "t",
       options: ["yes", "no"],
       description: "add tailwind css",
     }),
     storybook: flags.string({
+      char: "s",
       options: ["yes", "no"],
       description: "add storybook",
     }),
     airbnb: flags.string({
+      char: "a",
       options: ["yes", "no"],
       description: "add ESLint, Prettier with Airbnb style (Typescript)",
     }),
     "react-query": flags.string({
+      char: "q",
       options: ["yes", "no"],
       description: "add react-query",
     }),
     "react-hook-form": flags.string({
+      char: "f",
       options: ["yes", "no"],
       description: "add react-hook-form",
     }),
@@ -47,11 +53,11 @@ class NewWebApp extends Command {
     const { flags } = this.parse(NewWebApp);
     let {
       name = "vite-react-ts-app",
-      airbnb = "yes",
-      tailwind = "no",
+      airbnb = "no",
       "react-query": reactQuery = "no",
-      "react-hook-form": reactHookForm = "no",
       storybook = "no",
+      tailwind = "no",
+      "react-hook-form": reactHookForm = "no",
     } = flags;
 
     if (!flags.name) {
@@ -70,21 +76,21 @@ class NewWebApp extends Command {
         );
       }
 
-      if (!flags.storybook) {
-        storybook = await cli.prompt("Do you want to add storybook? (yes/no)", {
-          type: "normal",
-          default: "no",
-        });
-      }
-
       if (!flags["react-query"]) {
         reactQuery = await cli.prompt(
           "Do you want to add react-query for data fetching? (yes/no)",
           {
             type: "normal",
-            default: "no",
+            default: "yes",
           }
         );
+      }
+
+      if (!flags.storybook) {
+        storybook = await cli.prompt("Do you want to add storybook? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
       }
 
       if (!flags.tailwind) {
@@ -116,6 +122,19 @@ class NewWebApp extends Command {
 
     if (storybook === "yes") {
       await StorybookApp.run(["--name", name]);
+      if (tailwind === "yes") {
+        // Patch the fix for tailwind with storybook, refer https://github.com/storybookjs/storybook/issues/12668
+        cli.action.start("Upgrade Storybook prerelease");
+        replaceInFileSync({
+          files: [`${name}/package.json`],
+          from: '"dependencies"',
+          to: `"resolutions": {
+            "postcss": "8.3.0"
+          },"dependencies"`,
+        });
+        exec(`cd ${name} && npx sb upgrade --prerelease`);
+        cli.action.stop();
+      }
     }
 
     if (airbnb === "yes") {
@@ -130,9 +149,7 @@ class NewWebApp extends Command {
       await ReactHookFormApp.run(["--name", name]);
     }
 
-    if (airbnb === "yes") {
-      exec(`cd ${name} && yarn prettier . --fix --write`);
-    }
+    exec(`cd ${name} && npx prettier . --fix --write`);
   }
 }
 
