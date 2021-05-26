@@ -27,6 +27,11 @@
 - https://github.com/shelljs/shelljs Unix shell commands for Node.js
 - https://github.com/wj42ftns/replace-in-files Replace text in one or more files or globs.
 
+## Features
+
+- [x] Support React + Typescript template
+- [ ] Support Svelte
+
 ## Why vitejs
 
 Thank you for awesome recording from Amjad Masad
@@ -60,6 +65,7 @@ OPTIONS
   --airbnb=yes|no           add ESLint, Prettier with Airbnb style (Typescript)
   --react-hook-form=yes|no  add react-hook-form
   --react-query=yes|no      add react-query
+  --storybook=yes|no        add storybook
   --tailwind=yes|no         add tailwind css
 ```
 
@@ -68,6 +74,18 @@ OPTIONS
 # Commands
 
 <!-- commands -->
+
+1. Create new react-app with typescript support, default setting
+
+```sh
+  npx new-web-app -n react-web-app
+```
+
+2. Run help command for more usage
+
+```sh
+npx new-web-app -h
+```
 
 <!-- commandsstop -->
 
