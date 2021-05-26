@@ -11,9 +11,8 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-
-- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-- [Commands](#commands)
+* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+* [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -74,18 +73,6 @@ OPTIONS
 # Commands
 
 <!-- commands -->
-
-1. Create new react-app with typescript support, default setting
-
-```sh
-  npx new-web-app -n react-web-app
-```
-
-2. Run help command for more usage
-
-```sh
-npx new-web-app -h
-```
 
 <!-- commandsstop -->
 
