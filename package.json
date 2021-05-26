@@ -38,7 +38,12 @@
   ],
   "homepage": "https://github.com/jellydn/new-web-app",
   "keywords": [
-    "oclif"
+    "new-web-app",
+    "new web app",
+    "web app",
+    "frontend generator",
+    "app generator",
+    "react app generator"
   ],
   "license": "MIT",
   "main": "lib/index.js",
