@@ -11,9 +11,8 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-
-- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-- [Commands](#commands)
+* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+* [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
