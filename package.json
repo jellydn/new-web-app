@@ -18,13 +18,13 @@
     "tslib": "^2.2.0"
   },
   "devDependencies": {
-    "@oclif/dev-cli": "^1.26.0",
-    "@types/degit": "^2.8.2",
-    "@types/node": "^15.6.0",
-    "@types/shelljs": "^0.8.8",
-    "eslint": "^7.27.0",
-    "eslint-config-airbnb-typescript-prettier": "^4.2.0",
-    "prettier": "^2.3.0",
+    "@oclif/dev-cli": "1.26.0",
+    "@types/degit": "2.8.2",
+    "@types/node": "15.6.0",
+    "@types/shelljs": "0.8.8",
+    "eslint": "7.27.0",
+    "eslint-config-airbnb-typescript-prettier": "4.2.0",
+    "prettier": "2.3.0",
     "ts-node": "10.0.0",
     "typescript": "4.3.2"
   },
