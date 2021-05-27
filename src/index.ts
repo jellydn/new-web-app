@@ -53,90 +53,10 @@ class NewWebApp extends Command {
     "$ npx new-web-app --name=react-app --airbnb=yes --react-query=yes",
   ];
 
-  onSuccess(name: string) {
-    this.log(`Success! Created ${name}
-Inside that directory, you can run several commands:
-
-yarn dev
-  Starts the development server.
-
-yarn build
-  Bundles the app into static files for production.
-
-We suggest that you begin by typing:
-
-  cd ${name}
-  yarn dev
-
-Happy hacking!`);
-  }
-
   // TODO: detect yarn/npm
   async run() {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(NewWebApp);
-    let {
-      name = "vite-react-ts-app",
-      airbnb = "no",
-      "react-query": reactQuery = "no",
-      storybook = "no",
-      tailwind = "no",
-      "react-hook-form": reactHookForm = "no",
-    } = flags;
-
-    if (!flags.name) {
-      name = await cli.prompt("What is your project name?", {
-        type: "normal",
-        default: "vite-react-ts-app",
-      });
-
-      if (!flags.airbnb) {
-        airbnb = await cli.prompt(
-          "Do you want to add ESLint, Prettier with Airbnb style? (yes/no)",
-          {
-            type: "normal",
-            default: "yes",
-          }
-        );
-      }
-
-      if (!flags["react-query"]) {
-        reactQuery = await cli.prompt(
-          "Do you want to add react-query for data fetching? (yes/no)",
-          {
-            type: "normal",
-            default: "yes",
-          }
-        );
-      }
-
-      if (!flags.storybook) {
-        storybook = await cli.prompt("Do you want to add storybook? (yes/no)", {
-          type: "normal",
-          default: "no",
-        });
-      }
-
-      if (!flags.tailwind) {
-        tailwind = await cli.prompt(
-          "Do you want to add TailwindCSS? (yes/no)",
-          {
-            type: "normal",
-            default: "no",
-          }
-        );
-      }
-
-      if (!flags["react-hook-form"]) {
-        reactHookForm = await cli.prompt(
-          "Do you want to add react-hook-form? (yes/no)",
-          {
-            type: "normal",
-            default: "no",
-          }
-        );
-      }
-    }
+    const { name, airbnb, reactQuery, storybook, tailwind, reactHookForm } =
+      await this.parseInputs();
 
     // optimise speed by use preset template
     if (
@@ -212,6 +132,91 @@ Happy hacking!`);
 
     exec(`cd ${name} && npx prettier . --write`);
     this.onSuccess(name);
+  }
+
+  onSuccess(name: string) {
+    this.log(`Success! Created ${name}
+Inside that directory, you can run several commands:
+
+yarn dev
+  Starts the development server.
+
+yarn build
+  Bundles the app into static files for production.
+
+We suggest that you begin by typing:
+
+  cd ${name}
+  yarn dev
+
+Happy hacking!`);
+  }
+
+  private async parseInputs() {
+    // eslint-disable-next-line @typescript-eslint/no-shadow
+    const { flags } = this.parse(NewWebApp);
+    let {
+      name = "vite-react-ts-app",
+      airbnb = "no",
+      "react-query": reactQuery = "no",
+      storybook = "no",
+      tailwind = "no",
+      "react-hook-form": reactHookForm = "no",
+    } = flags;
+    if (!flags.name) {
+      name = await cli.prompt("What is your project name?", {
+        type: "normal",
+        default: "vite-react-ts-app",
+      });
+
+      if (!flags.airbnb) {
+        airbnb = await cli.prompt(
+          "Do you want to add ESLint, Prettier with Airbnb style? (yes/no)",
+          {
+            type: "normal",
+            default: "yes",
+          }
+        );
+      }
+
+      if (!flags["react-query"]) {
+        reactQuery = await cli.prompt(
+          "Do you want to add react-query for data fetching? (yes/no)",
+          {
+            type: "normal",
+            default: "yes",
+          }
+        );
+      }
+
+      if (!flags.storybook) {
+        storybook = await cli.prompt("Do you want to add storybook? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
+      }
+
+      if (!flags.tailwind) {
+        tailwind = await cli.prompt(
+          "Do you want to add TailwindCSS? (yes/no)",
+          {
+            type: "normal",
+            default: "no",
+          }
+        );
+      }
+
+      if (!flags["react-hook-form"]) {
+        reactHookForm = await cli.prompt(
+          "Do you want to add react-hook-form? (yes/no)",
+          {
+            type: "normal",
+            default: "no",
+          }
+        );
+      }
+    }
+    return { name, airbnb, reactQuery, storybook, tailwind, reactHookForm };
   }
 }
 
