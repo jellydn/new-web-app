@@ -9,6 +9,7 @@ import AirbnbApp from "./command/airbnb";
 import ReactQueryApp from "./command/react-query";
 import ReactHookFormApp from "./command/react-hook-form";
 import StorybookApp from "./command/storybook";
+import PresetApp from "./command/preset";
 
 class NewWebApp extends Command {
   static description = "New Web App Generator";
@@ -114,6 +115,40 @@ class NewWebApp extends Command {
       }
     }
 
+    // optimise speed by use preset template
+    if (
+      tailwind === "yes" &&
+      airbnb === "yes" &&
+      reactHookForm === "yes" &&
+      reactQuery === "yes" &&
+      storybook === "yes"
+    ) {
+      await PresetApp.run(["--name", name, "--preset", "full"]);
+      return;
+    }
+
+    if (
+      tailwind === "no" &&
+      airbnb === "yes" &&
+      reactHookForm === "no" &&
+      reactQuery === "yes" &&
+      storybook === "no"
+    ) {
+      await PresetApp.run(["--name", name, "--preset", "default"]);
+      return;
+    }
+
+    if (
+      tailwind === "no" &&
+      airbnb === "yes" &&
+      reactHookForm === "no" &&
+      reactQuery === "no" &&
+      storybook === "no"
+    ) {
+      await PresetApp.run(["--name", name, "--preset", "minimum"]);
+      return;
+    }
+
     await CloneApp.run(["--name", name]);
 
     if (tailwind === "yes") {
@@ -149,7 +184,7 @@ class NewWebApp extends Command {
       await ReactHookFormApp.run(["--name", name]);
     }
 
-    exec(`cd ${name} && npx prettier . --fix --write`);
+    exec(`cd ${name} && npx prettier . --write`);
   }
 }
 
