@@ -14,7 +14,7 @@ class PresetApp extends Command {
     }),
     preset: flags.string({
       char: "p",
-      options: ["default", "minium", "full"],
+      options: ["default", "minimum", "full"],
       description: "use preset from new-web-app CLI",
     }),
   };

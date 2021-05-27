@@ -48,6 +48,29 @@ class NewWebApp extends Command {
     }),
   };
 
+  static examples = [
+    "$ npx new-web-app -n=react-app -a=yes -q=yes",
+    "$ npx new-web-app --name=react-app --airbnb=yes --react-query=yes",
+  ];
+
+  onSuccess(name: string) {
+    this.log(`Success! Created ${name}
+Inside that directory, you can run several commands:
+
+yarn dev
+  Starts the development server.
+
+yarn build
+  Bundles the app into static files for production.
+
+We suggest that you begin by typing:
+
+  cd ${name}
+  yarn dev
+
+Happy hacking!`);
+  }
+
   // TODO: detect yarn/npm
   async run() {
     // eslint-disable-next-line @typescript-eslint/no-shadow
@@ -124,6 +147,7 @@ class NewWebApp extends Command {
       storybook === "yes"
     ) {
       await PresetApp.run(["--name", name, "--preset", "full"]);
+      this.onSuccess(name);
       return;
     }
 
@@ -135,6 +159,7 @@ class NewWebApp extends Command {
       storybook === "no"
     ) {
       await PresetApp.run(["--name", name, "--preset", "default"]);
+      this.onSuccess(name);
       return;
     }
 
@@ -146,6 +171,7 @@ class NewWebApp extends Command {
       storybook === "no"
     ) {
       await PresetApp.run(["--name", name, "--preset", "minimum"]);
+      this.onSuccess(name);
       return;
     }
 
@@ -185,6 +211,7 @@ class NewWebApp extends Command {
     }
 
     exec(`cd ${name} && npx prettier . --write`);
+    this.onSuccess(name);
   }
 }
 
