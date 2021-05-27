@@ -16,7 +16,7 @@
     "@hookform/devtools": "^3.1.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-hook-form": "^7.6.7",
+    "react-hook-form": "7.6.8",
     "react-query": "^3.16.0"
   },
   "devDependencies": {
