@@ -1,19 +1,15 @@
+---
+id: usage
+title: Usage
+sidebar_label: Usage
+slug: /
+---
+
 # Welcome to new-web-app 👋
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/new-web-app.svg)](https://npmjs.org/package/new-web-app)
-[![Downloads/week](https://img.shields.io/npm/dw/new-web-app.svg)](https://npmjs.org/package/new-web-app)
-[![License](https://img.shields.io/npm/l/new-web-app.svg)](https://github.com/jellydn/new-web-app/blob/master/package.json)![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.0.0-blue.svg)
-[![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
+[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) [![Version](https://img.shields.io/npm/v/new-web-app.svg)](https://npmjs.org/package/new-web-app) [![Downloads/week](https://img.shields.io/npm/dw/new-web-app.svg)](https://npmjs.org/package/new-web-app) [![License](https://img.shields.io/npm/l/new-web-app.svg)](https://github.com/jellydn/new-web-app/blob/master/package.json)![Prerequisite](https://img.shields.io/badge/node-%3E%3D12.0.0-blue.svg) [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
 
 > Frontend app generator
-
-### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
-
-<!-- toc -->
-* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-* [Commands](#commands)
-<!-- tocstop -->
 
 ## Prerequisites
 
@@ -33,15 +29,21 @@
 
 ## Why vitejs
 
-Thank you for awesome recording from Amjad Masad
-![./compare.gif](./compare.gif)
+Thank you for awesome recording from Amjad Masad ![https://github.com/jellydn/new-web-app/blob/main/compare.gif?raw=true](https://github.com/jellydn/new-web-app/blob/main/compare.gif?raw=true)
 
 In short, better performance, more detail on https://blog.replit.com/vite
 
 ## Install
 
+Install with `yarn`
+
 ```sh
 yarn global add new-web-app
+```
+
+or install with `npm`
+
+```sh
 npm install -g new-web-app yarn
 ```
 
@@ -72,14 +74,6 @@ EXAMPLES
   $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 
-<!-- usagestop -->
-
-# Commands
-
-<!-- commands -->
-
-<!-- commandsstop -->
-
 ## Demo
 
 ![https://gyazo.com/2ace08cfb1435f82a1c8e9550f547e44.gif](https://gyazo.com/2ace08cfb1435f82a1c8e9550f547e44.gif)
@@ -103,5 +97,3 @@ Feel free to check [issues page](https://github.com/jellydn/new-web-app/issues).
 Give a ⭐️ if this project helped you!
 
 ---
-
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
