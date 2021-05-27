@@ -17,10 +17,14 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Made for developers',
     imageUrl:
       'https://user-images.githubusercontent.com/449385/38243295-e0a47d58-372e-11e8-9bc0-8c02a6f4d2ac.png',
-    description: <>Built with DX mindset</>,
+    description: (
+      <>
+        <code>new-web-app</code> CLI is made for developers.
+      </>
+    ),
   },
   {
     title: 'Focus on What Matters',
@@ -28,7 +32,7 @@ const features = [
       'https://productsway.com/_next/image?url=%2Fstatic%2Fnew-web-app.png&w=640&q=75',
     description: (
       <>
-        One command <code>npx new-web-app</code> to simplify your work
+        One command <code>npx new-web-app</code> to simplify your work.
       </>
     ),
   },
