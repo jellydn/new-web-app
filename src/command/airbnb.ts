@@ -31,6 +31,7 @@ class AirbnbApp extends Command {
       extends: "airbnb-typescript-prettier"
     };`;
     writeFileSync(`${name}/.eslintrc.js`, linter);
+    writeFileSync(`${name}/.eslintignore`, ".eslintrc.js");
 
     exec(`cd ${name} && npx mrm@2 lint-staged`);
 
