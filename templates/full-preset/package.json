@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "resolutions": {
-    "postcss": "8.3.4"
+    "postcss": "8.3.5"
   },
   "dependencies": {
     "@hookform/devtools": "3.1.0",
@@ -34,7 +34,7 @@
     "eslint-config-airbnb-typescript-prettier": "4.2.0",
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
-    "postcss": "8.3.4",
+    "postcss": "8.3.5",
     "prettier": "2.3.1",
     "tailwindcss": "2.1.4",
     "typescript": "4.3.2",
