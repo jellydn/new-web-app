@@ -1,7 +1,6 @@
 import { Command, flags } from "@oclif/command";
 import cli from "cli-ux";
 import { exec } from "shelljs";
-import { replaceInFileSync } from "replace-in-file";
 
 import CloneApp from "./command/clone";
 import TailwindApp from "./command/tailwind";
@@ -103,19 +102,6 @@ class NewWebApp extends Command {
 
     if (storybook === "yes") {
       await StorybookApp.run(["--name", name]);
-      if (tailwind === "yes") {
-        // Patch the fix for tailwind with storybook, refer https://github.com/storybookjs/storybook/issues/12668
-        cli.action.start("Upgrade Storybook prerelease");
-        replaceInFileSync({
-          files: [`${name}/package.json`],
-          from: '"dependencies"',
-          to: `"resolutions": {
-            "postcss": "8.3.0"
-          },"dependencies"`,
-        });
-        exec(`cd ${name} && npx sb upgrade --prerelease`);
-        cli.action.stop();
-      }
     }
 
     if (airbnb === "yes") {

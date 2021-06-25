@@ -5,7 +5,8 @@ import cli from "cli-ux";
 
 // https://react-query.tanstack.com/installation
 class ReactQueryApp extends Command {
-  static description = "Performant and powerful data synchronization for React";
+  static description =
+    "Performance and powerful data synchronization for React";
 
   static flags = {
     name: flags.string({
