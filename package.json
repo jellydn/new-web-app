@@ -21,7 +21,7 @@
     "@oclif/dev-cli": "1.26.0",
     "@types/degit": "2.8.2",
     "@types/node": "15.6.0",
-    "@types/shelljs": "0.8.8",
+    "@types/shelljs": "0.8.9",
     "eslint": "7.30.0",
     "eslint-config-airbnb-typescript-prettier": "4.2.0",
     "prettier": "2.3.2",
