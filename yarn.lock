@@ -205,10 +205,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.1.tgz#a6ca6a9a0ff366af433f42f5f0e124794ff6b8f1"
   integrity sha512-FTgBI767POY/lKNDNbIzgAX6miIDBs6NTCbdlDb8TrWovHsSvaVIZDlTqym29C6UqhzwcJx4CYr+AlrMywA0cA==
 
-"@types/degit@2.8.2":
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/@types/degit/-/degit-2.8.2.tgz#a5878ecf8914c1408b31f2efda284add6e7ea7ce"
-  integrity sha512-wUOqW7nZ8AYgm4OKa9i/RD72CrU/X4Vfx2Oez/51qC3RMgPyF3ZUQVLFjV8McV6/ivR7lOlfidRFgGZj7MZe1A==
+"@types/degit@2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@types/degit/-/degit-2.8.3.tgz#61c809f42c80ae4fc83cce9a96241198677435e9"
+  integrity sha512-CL7y71j2zaDmtPLD5Xq5S1Gv2dFoHl0/GBZm6s39Mj/ls28L3NzAOqf7H4H0/2TNVMgMjMVf9CAFYSjmXhi3bw==
 
 "@types/glob@*", "@types/glob@^7.1.1":
   version "7.1.3"
