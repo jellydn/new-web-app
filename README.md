@@ -98,6 +98,10 @@ Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/jellydn/new-web-app/issues).
 
+## Stargazers
+
+[![Stargazers repo roster for @jellydn/new-web-app](https://reporoster.com/stars/jellydn/new-web-app)](https://github.com/jellydn/new-web-app/stargazers)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
