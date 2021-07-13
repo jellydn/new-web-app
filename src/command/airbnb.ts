@@ -24,11 +24,14 @@ class AirbnbApp extends Command {
     );
 
     exec(
-      `cd ${name} && yarn add -D typescript eslint prettier eslint-config-airbnb-typescript-prettier`
+      `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway`
     );
 
     const linter = `module.exports = {
-      extends: "airbnb-typescript-prettier"
+      extends: "productsway"
+      parserOptions: {
+        project: './tsconfig.json',
+      }
     };`;
     writeFileSync(`${name}/.eslintrc.js`, linter);
     writeFileSync(`${name}/.eslintignore`, ".eslintrc.js");
