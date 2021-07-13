@@ -18,7 +18,7 @@
     "eslint": "7.30.0",
     "eslint-config-airbnb-typescript-prettier": "4.2.0",
     "husky": "7.0.1",
-    "lint-staged": "11.0.0",
+    "lint-staged": "11.0.1",
     "prettier": "2.3.2",
     "typescript": "4.3.5",
     "vite": "2.4.2"
