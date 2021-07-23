@@ -24,7 +24,7 @@ class AirbnbApp extends Command {
     );
 
     exec(
-      `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway@0.1.7 @typescript-eslint/eslint-plugin@^4.28.3 @typescript-eslint/parser@^4.28.3 prettier@^2.3.2`
+      `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier`
     );
 
     const linter = `module.exports = {
