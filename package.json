@@ -22,9 +22,11 @@
     "@types/degit": "2.8.3",
     "@types/node": "15.6.0",
     "@types/shelljs": "0.8.9",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
     "eslint": "7.31.0",
-    "eslint-config-airbnb-typescript-prettier": "4.2.0",
-    "prettier": "2.3.2",
+    "eslint-config-productsway": "0.1.7",
+    "prettier": "^2.3.2",
     "ts-node": "10.1.0",
     "typescript": "4.3.5"
   },
@@ -51,7 +53,7 @@
   },
   "repository": "jellydn/new-web-app",
   "scripts": {
-    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "posttest": "eslint src --ext .js,.jsx,.ts,.tsx",
     "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
     "version": "oclif-dev readme && git add README.md",
     "vercel-build": "cd website && yarn install && yarn build"

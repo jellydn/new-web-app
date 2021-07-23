@@ -15,6 +15,7 @@ class ReactHookFormApp extends Command {
   };
 
   async run() {
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
     cli.action.start(`Install react-hook-form`);
