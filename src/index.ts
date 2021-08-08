@@ -9,6 +9,7 @@ import ReactQueryApp from "./command/react-query";
 import ReactHookFormApp from "./command/react-hook-form";
 import StorybookApp from "./command/storybook";
 import PresetApp from "./command/preset";
+import CypressApp from "./command/cypress";
 
 class NewWebApp extends Command {
   static description = "New Web App Generator";
@@ -45,6 +46,11 @@ class NewWebApp extends Command {
       options: ["yes", "no"],
       description: "add react-hook-form",
     }),
+    cypress: flags.string({
+      char: "c",
+      options: ["yes", "no"],
+      description: "add cypress",
+    }),
   };
 
   static examples = [
@@ -54,8 +60,15 @@ class NewWebApp extends Command {
 
   // TODO: detect yarn/npm
   async run() {
-    const { name, airbnb, reactQuery, storybook, tailwind, reactHookForm } =
-      await this.parseInputs();
+    const {
+      name,
+      airbnb,
+      reactQuery,
+      storybook,
+      tailwind,
+      reactHookForm,
+      cypress,
+    } = await this.parseInputs();
 
     // optimise speed by use preset template
     if (
@@ -63,7 +76,8 @@ class NewWebApp extends Command {
       airbnb === "yes" &&
       reactHookForm === "yes" &&
       reactQuery === "yes" &&
-      storybook === "yes"
+      storybook === "yes" &&
+      cypress === "yes"
     ) {
       await PresetApp.run(["--name", name, "--preset", "full"]);
       this.onSuccess(name);
@@ -116,6 +130,10 @@ class NewWebApp extends Command {
       await ReactHookFormApp.run(["--name", name]);
     }
 
+    if (cypress === "yes") {
+      await CypressApp.run(["--name", name]);
+    }
+
     exec(`cd ${name} && npx prettier . --write`);
     this.onSuccess(name);
   }
@@ -148,6 +166,7 @@ Happy hacking!`);
       storybook = "no",
       tailwind = "no",
       "react-hook-form": reactHookForm = "no",
+      cypress = "no",
     } = flags;
     if (!flags.name) {
       name = await cli.prompt("What is your project name?", {
@@ -201,8 +220,23 @@ Happy hacking!`);
           }
         );
       }
+
+      if (!flags.cypress) {
+        cypress = await cli.prompt("Do you want to add cypress? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
+      }
     }
-    return { name, airbnb, reactQuery, storybook, tailwind, reactHookForm };
+    return {
+      name,
+      airbnb,
+      reactQuery,
+      storybook,
+      tailwind,
+      reactHookForm,
+      cypress,
+    };
   }
 }
 

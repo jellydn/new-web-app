@@ -5,7 +5,7 @@ import cli from "cli-ux";
 import degit from "degit";
 
 class PresetApp extends Command {
-  static description = "Scaffolding Your Vite Project";
+  static description = "Scaffolding Your Vite Project With Preset";
 
   static flags = {
     name: flags.string({
@@ -24,7 +24,7 @@ class PresetApp extends Command {
     const { flags } = this.parse(PresetApp);
     const name = flags.name ?? "vite-react-ts-app";
 
-    cli.action.start(`Clone react-ts for ${name}`);
+    cli.action.start(PresetApp.description);
     const d = degit(`jellydn/new-web-app/templates/${flags.preset}-preset`);
     await d.clone(name);
     cli.action.stop();

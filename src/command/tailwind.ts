@@ -19,7 +19,7 @@ class TailwindApp extends Command {
     // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(`Install Tailwind CSS with React and Vite`);
+    cli.action.start(TailwindApp.description);
     cli.action.stop();
 
     cli.action.start("Setting up Tailwind CSS");

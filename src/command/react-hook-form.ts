@@ -5,7 +5,8 @@ import cli from "cli-ux";
 
 // https://www.react-hook-form.com/get-started
 class ReactHookFormApp extends Command {
-  static description = "Simple form validation with React Hook Form.";
+  static description =
+    "Install React-hook-form - Simple form validation with React Hook Form.";
 
   static flags = {
     name: flags.string({
@@ -18,7 +19,7 @@ class ReactHookFormApp extends Command {
     // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(`Install react-hook-form`);
+    cli.action.start(ReactHookFormApp.description);
     exec(`cd ${name} && yarn add react-hook-form @hookform/devtools`);
     cli.action.stop();
 

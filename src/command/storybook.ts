@@ -4,7 +4,8 @@ import cli from "cli-ux";
 
 // https://storybook.js.org/docs/react/get-started/install
 class StorybookApp extends Command {
-  static description = "Build bulletproof UI components faster";
+  static description =
+    "Install Storybook - Build bulletproof UI components faster";
 
   static flags = {
     name: flags.string({
@@ -17,7 +18,7 @@ class StorybookApp extends Command {
     // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = this.parse(StorybookApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(`Install Storybook`);
+    cli.action.start(StorybookApp.description);
 
     exec(`cd ${name} && npx sb init`);
 
