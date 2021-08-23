@@ -26,7 +26,7 @@ class AirbnbApp extends Command {
     );
 
     const linter = `module.exports = {
-      extends: "productsway"
+      extends: "productsway",
       parserOptions: {
         project: './tsconfig.json',
       }
