@@ -21,7 +21,7 @@ class CloneApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
 
     cli.action.start(CloneApp.description);
-    const d = degit("vitejs/vite/packages/create-app/template-react-ts");
+    const d = degit("vitejs/vite/packages/create-vite/template-react-ts");
     await d.clone(name);
     cli.action.stop();
 
