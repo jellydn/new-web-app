@@ -2,7 +2,7 @@ import { Command, flags } from "@oclif/command";
 import { exec } from "shelljs";
 import degit from "degit";
 import cli from "cli-ux";
-import { renameSync } from "fs";
+import { renameSync, existsSync } from "fs";
 import { join } from "path";
 
 class CloneApp extends Command {
@@ -28,7 +28,9 @@ class CloneApp extends Command {
     cli.action.start("Install");
     exec(`cd ${name} && git init`);
     exec(`cd ${name} && yarn install`);
-    renameSync(join(name, "_gitignore"), join(name, ".gitignore"));
+    if (existsSync(join(name, "_gitignore"))) {
+      renameSync(join(name, "_gitignore"), join(name, ".gitignore"));
+    }
     cli.action.stop();
   }
 }
