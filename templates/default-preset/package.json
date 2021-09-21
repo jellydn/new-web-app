@@ -13,7 +13,7 @@
     "react-query": "3.24.3"
   },
   "devDependencies": {
-    "@types/react": "17.0.22",
+    "@types/react": "17.0.24",
     "@types/react-dom": "17.0.9",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
