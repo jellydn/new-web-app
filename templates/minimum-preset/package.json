@@ -20,7 +20,7 @@
     "cypress": "8.6.0",
     "eslint": "8.0.1",
     "eslint-config-productsway": "0.1.9",
-    "husky": "7.0.2",
+    "husky": "7.0.4",
     "lint-staged": "11.2.3",
     "prettier": "2.4.1",
     "typescript": "4.4.4",
