@@ -39,7 +39,7 @@
     "eslint-plugin-react": "7.26.1",
     "eslint-plugin-react-hooks": "4.2.0",
     "prettier": "2.4.1",
-    "stylelint": "13.13.1"
+    "stylelint": "14.0.0"
   },
   "browserslist": {
     "production": [
