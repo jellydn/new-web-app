@@ -20,7 +20,7 @@
   "devDependencies": {
     "@oclif/dev-cli": "1.26.3",
     "@types/degit": "2.8.3",
-    "@types/node": "16.11.9",
+    "@types/node": "16.11.10",
     "@types/shelljs": "0.8.9",
     "@typescript-eslint/eslint-plugin": "5.4.0",
     "@typescript-eslint/parser": "5.4.0",
