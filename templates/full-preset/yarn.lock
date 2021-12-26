@@ -9478,6 +9478,14 @@ postcss-selector-parser@^6.0.0, postcss-selector-parser@^6.0.2, postcss-selector
     cssesc "^3.0.0"
     util-deprecate "^1.0.2"
 
+postcss-selector-parser@^6.0.7:
+  version "6.0.8"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.8.tgz#f023ed7a9ea736cd7ef70342996e8e78645a7914"
+  integrity sha512-D5PG53d209Z1Uhcc0qAZ5U3t5HagH3cxu+WLZ22jt3gLUpXM4eXXfiO14jiDWST3NNooX/E8wISfOhZ9eIjGTQ==
+  dependencies:
+    cssesc "^3.0.0"
+    util-deprecate "^1.0.2"
+
 postcss-value-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
@@ -11137,10 +11145,10 @@ synchronous-promise@^2.0.15:
   resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.15.tgz#07ca1822b9de0001f5ff73595f3d08c4f720eb8e"
   integrity sha512-k8uzYIkIVwmT+TcglpdN50pS2y1BDcUnBPK9iJeGu0Pl1lOI8pD6wtzgw91Pjpe+RxtTncw32tLxs/R0yNL2Mg==
 
-tailwindcss@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.1.tgz#bef72ff45d5cfed79bb648d30da952e521e98da4"
-  integrity sha512-EVDXVZkcueZ77/zfOJw7XkzCuxe5TCiT/S9pw9P183oRzSuwMZ7WO+W/L76jbJQA5qxGeUBJOVOLVBuAUfeZ3g==
+tailwindcss@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.0.7.tgz#15936881f042a7eb8d6f2b6a454bac9f51181bbd"
+  integrity sha512-rZdKNHtC64jcQncLoWOuCzj4lQDTAgLtgK3WmQS88tTdpHh9OwLqULTQxI3tw9AMJsqSpCKlmcjW/8CSnni6zQ==
   dependencies:
     arg "^5.0.1"
     chalk "^4.1.2"
@@ -11158,7 +11166,7 @@ tailwindcss@3.0.1:
     postcss-js "^3.0.3"
     postcss-load-config "^3.1.0"
     postcss-nested "5.0.6"
-    postcss-selector-parser "^6.0.6"
+    postcss-selector-parser "^6.0.7"
     postcss-value-parser "^4.2.0"
     quick-lru "^5.1.1"
     resolve "^1.20.0"
