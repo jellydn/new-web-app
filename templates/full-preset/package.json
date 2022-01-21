@@ -13,7 +13,7 @@
     "postcss": "8.4.5"
   },
   "dependencies": {
-    "@hookform/devtools": "4.0.1",
+    "@hookform/devtools": "4.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hook-form": "7.24.0",
