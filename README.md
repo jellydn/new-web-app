@@ -100,7 +100,7 @@ EXAMPLES
   $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 
-_See code: [dist/commands/create/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.0-0/dist/commands/create/index.ts)_
+_See code: [dist/commands/create/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.0/dist/commands/create/index.ts)_
 
 ## `new-web-app help [COMMAND]`
 
