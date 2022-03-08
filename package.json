@@ -61,8 +61,8 @@
     ],
     "topicSeparator": " ",
     "topics": {
-      "create": {
-        "description": "Create a new web app with ViteJs"
+      "react": {
+        "description": "Create a new React app with ViteJs"
       }
     }
   },

@@ -11,8 +11,8 @@ import StorybookApp from "../../utils/storybook";
 import PresetApp from "../../utils/preset";
 import CypressApp from "../../utils/cypress";
 
-export default class CreateCommand extends Command {
-  static description = "New Web App Generator";
+export default class ReactCommand extends Command {
+  static description = "React App Generator";
 
   static flags = {
     version: Flags.version({ char: "v" }),
@@ -158,7 +158,7 @@ Happy hacking!`);
 
   private async parseInputs() {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = await this.parse(CreateCommand);
+    const { flags } = await this.parse(ReactCommand);
     let {
       name = "vite-react-ts-app",
       airbnb = "no",
