@@ -8,13 +8,13 @@
   },
   "bugs": "https://github.com/jellydn/new-web-app/issues",
   "dependencies": {
-    "@oclif/command": "^1.8.0",
-    "@oclif/config": "^1.17.0",
-    "@oclif/plugin-help": "^5.0.0",
-    "cli-ux": "^6.0.0",
+    "@oclif/command": "^1.8.16",
+    "@oclif/config": "^1.18.3",
+    "@oclif/plugin-help": "^5.1.12",
+    "cli-ux": "^6.0.9",
     "degit": "^2.8.4",
-    "replace-in-file": "^6.2.0",
-    "shelljs": "^0.8.4",
+    "replace-in-file": "^6.3.2",
+    "shelljs": "^0.8.5",
     "tslib": "^2.3.1"
   },
   "devDependencies": {
