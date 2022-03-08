@@ -8,14 +8,12 @@
   },
   "bugs": "https://github.com/jellydn/new-web-app/issues",
   "dependencies": {
-    "@oclif/command": "^1.8.16",
-    "@oclif/config": "^1.18.3",
+    "@oclif/core": "^1.5.2",
     "@oclif/plugin-help": "^5.1.12",
-    "cli-ux": "^6.0.9",
+    "@oclif/plugin-plugins": "^2.1.0",
     "degit": "^2.8.4",
     "replace-in-file": "^6.3.2",
-    "shelljs": "^0.8.5",
-    "tslib": "^2.3.1"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "@oclif/dev-cli": "1.26.10",
@@ -26,16 +24,21 @@
     "@typescript-eslint/parser": "5.14.0",
     "eslint": "8.10.0",
     "eslint-config-productsway": "0.1.10",
+    "oclif": "^2.5.0",
     "prettier": "2.5.1",
+    "shx": "^0.3.4",
     "ts-node": "10.7.0",
+    "tslib": "^2.3.1",
     "typescript": "4.6.2"
   },
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.0.0"
   },
   "files": [
     "/bin",
-    "/lib"
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
   ],
   "homepage": "https://github.com/jellydn/new-web-app",
   "keywords": [
@@ -47,15 +50,31 @@
     "react app generator"
   ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "oclif": {
-    "bin": "new-web-app"
+    "bin": "new-web-app",
+    "dirname": "new-web-app",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "create": {
+        "description": "Create a new web app with ViteJs"
+      }
+    }
   },
   "repository": "jellydn/new-web-app",
   "scripts": {
-    "posttest": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
-    "version": "oclif-dev readme && git add README.md",
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md",
     "vercel-build": "cd website && yarn install && yarn build"
   },
   "types": "lib/index.d.ts"

@@ -1,34 +1,34 @@
-import { Command, flags } from "@oclif/command";
+import { Command, Flags } from "@oclif/core";
 import { exec } from "shelljs";
 import { replaceInFileSync } from "replace-in-file";
 import { writeFileSync } from "fs";
-import cli from "cli-ux";
+import { CliUx } from "@oclif/core";
 
 // https://tailwindcss.com/docs/guides/vue-3-vite#install-tailwind-via-npm
 class TailwindApp extends Command {
   static description = "Install Tailwind CSS with React and Vite";
 
   static flags = {
-    name: flags.string({
+    name: Flags.string({
       char: "n",
       description: "folder name to create",
     }),
   };
 
-  async run() {
+  async run(): Promise<void> {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(TailwindApp);
+    const { flags } = await this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(TailwindApp.description);
-    cli.action.stop();
+    CliUx.ux.action.start(TailwindApp.description);
+    CliUx.ux.action.stop();
 
-    cli.action.start("Setting up Tailwind CSS");
+    CliUx.ux.action.start("Setting up Tailwind CSS");
     exec(
       `cd ${name} && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p`
     );
-    cli.action.stop();
+    CliUx.ux.action.stop();
 
-    cli.action.start(
+    CliUx.ux.action.start(
       "Configure Tailwind to remove unused styles in production"
     );
     replaceInFileSync({
@@ -42,7 +42,7 @@ class TailwindApp extends Command {
 @tailwind utilities;`;
     writeFileSync(`${name}/src/index.css`, styles);
 
-    cli.action.stop();
+    CliUx.ux.action.stop();
   }
 }
 

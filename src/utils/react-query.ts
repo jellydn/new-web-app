@@ -1,7 +1,7 @@
-import { Command, flags } from "@oclif/command";
+import { Command, Flags } from "@oclif/core";
 import { exec } from "shelljs";
 import { replaceInFileSync } from "replace-in-file";
-import cli from "cli-ux";
+import { CliUx } from "@oclif/core";
 
 // https://react-query.tanstack.com/installation
 class ReactQueryApp extends Command {
@@ -9,17 +9,17 @@ class ReactQueryApp extends Command {
     "Performance and powerful data synchronization for React";
 
   static flags = {
-    name: flags.string({
+    name: Flags.string({
       char: "n",
       description: "folder name to create",
     }),
   };
 
-  async run() {
+  async run(): Promise<void> {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(ReactQueryApp);
+    const { flags } = await this.parse(ReactQueryApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(ReactQueryApp.description);
+    CliUx.ux.action.start(ReactQueryApp.description);
 
     exec(`cd ${name} && yarn add react-query`);
 
@@ -53,7 +53,7 @@ class ReactQueryApp extends Command {
       )`,
     });
 
-    cli.action.stop();
+    CliUx.ux.action.stop();
   }
 }
 

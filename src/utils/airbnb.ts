@@ -1,7 +1,7 @@
-import { Command, flags } from "@oclif/command";
+import { Command, Flags } from "@oclif/core";
 import { exec } from "shelljs";
 import { writeFileSync } from "fs";
-import cli from "cli-ux";
+import { CliUx } from "@oclif/core";
 
 // https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier
 class AirbnbApp extends Command {
@@ -9,17 +9,17 @@ class AirbnbApp extends Command {
     "Install ESLint - Airbnb's ESLint config with TypeScript and Prettier support.";
 
   static flags = {
-    name: flags.string({
+    name: Flags.string({
       char: "n",
       description: "folder name to create",
     }),
   };
 
-  async run() {
+  async run(): Promise<void> {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(AirbnbApp);
+    const { flags } = await this.parse(AirbnbApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(AirbnbApp.description);
+    CliUx.ux.action.start(AirbnbApp.description);
 
     exec(
       `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`
@@ -41,7 +41,7 @@ class AirbnbApp extends Command {
 
     exec(`cd ${name} && npx mrm@2 lint-staged`);
 
-    cli.action.stop();
+    CliUx.ux.action.stop();
   }
 }
 

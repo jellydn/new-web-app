@@ -70,7 +70,7 @@ OPTIONS
   -v, --version                 show CLI version
 
 EXAMPLES
-  $ npx new-web-app -n=react-app -a=yes -q=yes
+  $ npx new-web-app create -n=react-app -a=yes -q=yes
   $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 

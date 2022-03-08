@@ -1,7 +1,7 @@
-import { Command, flags } from "@oclif/command";
+import { Command, Flags } from "@oclif/core";
 import { exec } from "shelljs";
 import { replaceInFileSync } from "replace-in-file";
-import cli from "cli-ux";
+import { CliUx } from "@oclif/core";
 
 // https://www.react-hook-form.com/get-started
 class ReactHookFormApp extends Command {
@@ -9,21 +9,21 @@ class ReactHookFormApp extends Command {
     "Install React-hook-form - Simple form validation with React Hook Form.";
 
   static flags = {
-    name: flags.string({
+    name: Flags.string({
       char: "n",
       description: "folder name to create",
     }),
   };
 
-  async run() {
+  async run(): Promise<void> {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(ReactHookFormApp);
+    const { flags } = await this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(ReactHookFormApp.description);
+    CliUx.ux.action.start(ReactHookFormApp.description);
     exec(`cd ${name} && yarn add react-hook-form @hookform/devtools`);
-    cli.action.stop();
+    CliUx.ux.action.stop();
 
-    cli.action.start("Add react-hook-form example");
+    CliUx.ux.action.start("Add react-hook-form example");
     replaceInFileSync({
       files: [`${name}/src/App.tsx`],
       from: "import './App.css'",
@@ -75,7 +75,7 @@ class ReactHookFormApp extends Command {
       `,
     });
 
-    cli.action.stop();
+    CliUx.ux.action.stop();
   }
 }
 

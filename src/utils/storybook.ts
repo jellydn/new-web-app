@@ -1,6 +1,6 @@
-import { Command, flags } from "@oclif/command";
+import { Command, Flags } from "@oclif/core";
 import { exec } from "shelljs";
-import cli from "cli-ux";
+import { CliUx } from "@oclif/core";
 
 // https://storybook.js.org/docs/react/get-started/install
 class StorybookApp extends Command {
@@ -8,21 +8,21 @@ class StorybookApp extends Command {
     "Install Storybook - Build bulletproof UI components faster";
 
   static flags = {
-    name: flags.string({
+    name: Flags.string({
       char: "n",
       description: "folder name to create",
     }),
   };
 
-  async run() {
+  async run(): Promise<void> {
     // eslint-disable-next-line @typescript-eslint/no-shadow
-    const { flags } = this.parse(StorybookApp);
+    const { flags } = await this.parse(StorybookApp);
     const name = flags.name ?? "vite-react-ts-app";
-    cli.action.start(StorybookApp.description);
+    CliUx.ux.action.start(StorybookApp.description);
 
     exec(`cd ${name} && npx sb init`);
 
-    cli.action.stop();
+    CliUx.ux.action.stop();
   }
 }
 
