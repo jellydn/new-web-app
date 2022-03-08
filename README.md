@@ -11,10 +11,11 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-* [Install globally with yarn](#install-globally-with-yarn)
-* [Or install globally with npm](#or-install-globally-with-npm)
-* [Commands](#commands)
+
+- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+- [Install globally with yarn](#install-globally-with-yarn)
+- [Or install globally with npm](#or-install-globally-with-npm)
+- [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -32,6 +33,7 @@
 
 - [x] Support React + Typescript template
 - [ ] Support Svelte
+- [ ] Support Solid
 
 ## Why vitejs
 
@@ -56,14 +58,15 @@ npm install -g new-web-app yarn
 # Commands
 
 <!-- commands -->
-* [`new-web-app help [COMMAND]`](#new-web-app-help-command)
-* [`new-web-app plugins`](#new-web-app-plugins)
-* [`new-web-app plugins:inspect PLUGIN...`](#new-web-app-pluginsinspect-plugin)
-* [`new-web-app plugins:install PLUGIN...`](#new-web-app-pluginsinstall-plugin)
-* [`new-web-app plugins:link PLUGIN`](#new-web-app-pluginslink-plugin)
-* [`new-web-app plugins:uninstall PLUGIN...`](#new-web-app-pluginsuninstall-plugin)
-* [`new-web-app plugins update`](#new-web-app-plugins-update)
-* [`new-web-app react`](#new-web-app-react)
+
+- [`new-web-app help [COMMAND]`](#new-web-app-help-command)
+- [`new-web-app plugins`](#new-web-app-plugins)
+- [`new-web-app plugins:inspect PLUGIN...`](#new-web-app-pluginsinspect-plugin)
+- [`new-web-app plugins:install PLUGIN...`](#new-web-app-pluginsinstall-plugin)
+- [`new-web-app plugins:link PLUGIN`](#new-web-app-pluginslink-plugin)
+- [`new-web-app plugins:uninstall PLUGIN...`](#new-web-app-pluginsuninstall-plugin)
+- [`new-web-app plugins update`](#new-web-app-plugins-update)
+- [`new-web-app react`](#new-web-app-react)
 
 ## `new-web-app help [COMMAND]`
 
@@ -158,7 +161,7 @@ ALIASES
   $ new-web-app plugins add
 
 EXAMPLES
-  $ new-web-app plugins:install myplugin 
+  $ new-web-app plugins:install myplugin
 
   $ new-web-app plugins:install https://github.com/someuser/someplugin
 
@@ -267,6 +270,7 @@ EXAMPLES
 ```
 
 _See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.1/dist/commands/react/index.ts)_
+
 <!-- commandsstop -->
 
 ## Demo
