@@ -1,7 +1,7 @@
 import { Command, Flags } from "@oclif/core";
-import { exec } from "shelljs";
-import { writeFileSync } from "fs";
 import { CliUx } from "@oclif/core";
+import { writeFileSync } from "fs";
+import { exec } from "shelljs";
 
 // https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier
 class AirbnbApp extends Command {
@@ -16,7 +16,6 @@ class AirbnbApp extends Command {
   };
 
   async run(): Promise<void> {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = await this.parse(AirbnbApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(AirbnbApp.description);

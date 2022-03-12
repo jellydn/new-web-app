@@ -1,6 +1,6 @@
 import { Command, Flags } from "@oclif/core";
-import { exec } from "shelljs";
 import { CliUx } from "@oclif/core";
+import { exec } from "shelljs";
 
 // https://storybook.js.org/docs/react/get-started/install
 class StorybookApp extends Command {
@@ -15,7 +15,6 @@ class StorybookApp extends Command {
   };
 
   async run(): Promise<void> {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = await this.parse(StorybookApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(StorybookApp.description);

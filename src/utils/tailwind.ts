@@ -1,8 +1,8 @@
 import { Command, Flags } from "@oclif/core";
-import { exec } from "shelljs";
-import { replaceInFileSync } from "replace-in-file";
-import { writeFileSync } from "fs";
 import { CliUx } from "@oclif/core";
+import { writeFileSync } from "fs";
+import { replaceInFileSync } from "replace-in-file";
+import { exec } from "shelljs";
 
 // https://tailwindcss.com/docs/guides/vue-3-vite#install-tailwind-via-npm
 class TailwindApp extends Command {
@@ -16,7 +16,6 @@ class TailwindApp extends Command {
   };
 
   async run(): Promise<void> {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = await this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(TailwindApp.description);

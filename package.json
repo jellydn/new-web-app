@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/jellydn/new-web-app/issues",
   "dependencies": {
-    "@oclif/core": "^1.5.2",
+    "@oclif/core": "^1.5.3",
     "@oclif/plugin-help": "^5.1.12",
     "@oclif/plugin-plugins": "^2.1.0",
     "degit": "^2.8.4",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@oclif/dev-cli": "1.26.10",
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/degit": "2.8.3",
     "@types/node": "16.11.26",
     "@types/shelljs": "0.8.11",
@@ -24,8 +25,10 @@
     "@typescript-eslint/parser": "5.14.0",
     "eslint": "8.11.0",
     "eslint-config-productsway": "0.1.10",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "oclif": "2.5.0",
-    "prettier": "2.5.1",
+    "prettier": "^2.5.1",
     "shx": "0.3.4",
     "ts-node": "10.7.0",
     "tslib": "2.3.1",
@@ -54,7 +57,7 @@
   "oclif": {
     "bin": "new-web-app",
     "dirname": "new-web-app",
-    "commands": "./dist/commands",
+    "commands": "./src/commands",
     "plugins": [
       "@oclif/plugin-help"
     ],
@@ -74,7 +77,12 @@
     "prepack": "yarn build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md",
-    "vercel-build": "cd website && yarn install && yarn build"
+    "vercel-build": "cd website && yarn install && yarn build",
+    "prepare": "husky install"
   },
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
 }

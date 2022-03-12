@@ -2,14 +2,14 @@ import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 import { exec } from "shelljs";
 
-import CloneApp from "../../utils/clone";
-import TailwindApp from "../../utils/tailwind";
 import AirbnbApp from "../../utils/airbnb";
-import ReactQueryApp from "../../utils/react-query";
-import ReactHookFormApp from "../../utils/react-hook-form";
-import StorybookApp from "../../utils/storybook";
-import PresetApp from "../../utils/preset";
+import CloneApp from "../../utils/clone";
 import CypressApp from "../../utils/cypress";
+import PresetApp from "../../utils/preset";
+import ReactHookFormApp from "../../utils/react-hook-form";
+import ReactQueryApp from "../../utils/react-query";
+import StorybookApp from "../../utils/storybook";
+import TailwindApp from "../../utils/tailwind";
 
 export default class ReactCommand extends Command {
   static description = "React App Generator";
@@ -157,7 +157,6 @@ Happy hacking!`);
   }
 
   private async parseInputs() {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = await this.parse(ReactCommand);
     let {
       name = "vite-react-ts-app",

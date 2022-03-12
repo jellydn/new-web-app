@@ -1,7 +1,7 @@
 import { Command, Flags } from "@oclif/core";
-import { exec } from "shelljs";
-import { replaceInFileSync } from "replace-in-file";
 import { CliUx } from "@oclif/core";
+import { replaceInFileSync } from "replace-in-file";
+import { exec } from "shelljs";
 
 // https://react-query.tanstack.com/installation
 class ReactQueryApp extends Command {
@@ -16,7 +16,6 @@ class ReactQueryApp extends Command {
   };
 
   async run(): Promise<void> {
-    // eslint-disable-next-line @typescript-eslint/no-shadow
     const { flags } = await this.parse(ReactQueryApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(ReactQueryApp.description);
