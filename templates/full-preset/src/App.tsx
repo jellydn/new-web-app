@@ -1,10 +1,11 @@
+import { DevTool } from "@hookform/devtools";
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import logo from "./logo.svg";
-import { useForm } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
+
 import "./App.css";
+import logo from "./logo.svg";
 
 const queryClient = new QueryClient();
 
