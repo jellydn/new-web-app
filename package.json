@@ -1,7 +1,7 @@
 {
   "name": "new-web-app",
   "description": "Frontend app generator",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Huynh Duc Dung @jellydn",
   "bin": {
     "new-web-app": "./bin/run"
