@@ -22,7 +22,7 @@
     "@types/shelljs": "0.8.11",
     "@typescript-eslint/eslint-plugin": "5.14.0",
     "@typescript-eslint/parser": "5.14.0",
-    "eslint": "8.10.0",
+    "eslint": "8.11.0",
     "eslint-config-productsway": "0.1.10",
     "oclif": "^2.5.0",
     "prettier": "2.5.1",
