@@ -11,10 +11,11 @@
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
 <!-- toc -->
-* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-* [Install globally with yarn](#install-globally-with-yarn)
-* [Or install globally with npm](#or-install-globally-with-npm)
-* [Commands](#commands)
+
+- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+- [Install globally with yarn](#install-globally-with-yarn)
+- [Or install globally with npm](#or-install-globally-with-npm)
+- [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -57,8 +58,9 @@ npm install -g new-web-app yarn
 # Commands
 
 <!-- commands -->
-* [`new-web-app help [COMMAND]`](#new-web-app-help-command)
-* [`new-web-app react`](#new-web-app-react)
+
+- [`new-web-app help [COMMAND]`](#new-web-app-help-command)
+- [`new-web-app react`](#new-web-app-react)
 
 ## `new-web-app help [COMMAND]`
 
@@ -115,7 +117,8 @@ EXAMPLES
   $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 
-_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.2/dist/commands/react/index.ts)_
+_See code: [src/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.2/src/commands/react/index.ts)_
+
 <!-- commandsstop -->
 
 ## Demo

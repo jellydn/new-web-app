@@ -57,7 +57,7 @@
   "oclif": {
     "bin": "new-web-app",
     "dirname": "new-web-app",
-    "commands": "./src/commands",
+    "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help"
     ],
