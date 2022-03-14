@@ -27,7 +27,7 @@
     "eslint-config-productsway": "0.1.10",
     "husky": ">=6",
     "lint-staged": ">=10",
-    "oclif": "2.5.0",
+    "oclif": "2.6.0",
     "prettier": "^2.5.1",
     "shx": "0.3.4",
     "ts-node": "10.7.0",
