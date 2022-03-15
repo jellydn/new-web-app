@@ -24,7 +24,7 @@
     "@typescript-eslint/eslint-plugin": "5.15.0",
     "@typescript-eslint/parser": "5.15.0",
     "eslint": "8.11.0",
-    "eslint-config-productsway": "0.1.10",
+    "eslint-config-productsway": "0.1.11",
     "husky": ">=6",
     "lint-staged": ">=10",
     "oclif": "2.6.0",
