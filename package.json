@@ -26,7 +26,7 @@
     "eslint": "8.11.0",
     "eslint-config-productsway": "0.1.11",
     "husky": ">=6",
-    "lint-staged": ">=10",
+    "lint-staged": "12.3.6",
     "oclif": "2.6.0",
     "prettier": "2.6.0",
     "shx": "0.3.4",
