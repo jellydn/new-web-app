@@ -574,10 +574,10 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.6.1.tgz#8300132782fd5845e3f08026f2fbd95917e8c2dd"
-  integrity sha512-qB33YT3JUc7oH3Mtoov8yRETdMiQKsQNdoB2ozRq8JOCxtqI2f0XiQ6eqes3GpeMZKucl4mmonws5LYraLdQlg==
+"@oclif/core@^1.6.4":
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.6.4.tgz#fd213265199a8ef93adb358e15a04d74927eb522"
+  integrity sha512-eUnh03MWxs3PHQUdZbo43ceLqmeOgGegsfimeqd6xfhcKwSv8dqarRyAoMCjg7P6Qm5qCjaNFZ6eS4ao349xvQ==
   dependencies:
     "@oclif/linewrap" "^1.0.0"
     "@oclif/screen" "^3.0.2"
@@ -4131,12 +4131,12 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
-oclif@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-2.6.1.tgz#393325a75638c5a9bf710e8d59022bd514130b4b"
-  integrity sha512-6yWPtMSi7SIqgSRaLTcaI3P6Q7cDprETw/K85MIeFw6GZXaf+Fva/J2YdTXPgnEPqZ450AYHyulwdPISqiDCnA==
+oclif@2.6.3:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-2.6.3.tgz#77295d8342a41bfebcf13f7eba260d26ff5d92ef"
+  integrity sha512-t3w1GnDrZ9GnlO2WxdTRIlb5EmfLo7fkcpKo95q+03HoL4GVUNneraVymyUTYEBsvMyWcX8PbVkcMai/HhBydA==
   dependencies:
-    "@oclif/core" "^1.6.1"
+    "@oclif/core" "^1.6.4"
     "@oclif/plugin-help" "^5.1.11"
     "@oclif/plugin-not-found" "^2.3.1"
     "@oclif/plugin-warn-if-update-available" "^2.0.4"
