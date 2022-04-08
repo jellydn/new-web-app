@@ -117,7 +117,7 @@ EXAMPLES
   $ npx new-web-app --name=react-app --airbnb=yes --react-query=yes
 ```
 
-_See code: [src/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.3/src/commands/react/index.ts)_
+_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.4/dist/commands/react/index.ts)_
 
 <!-- commandsstop -->
 
