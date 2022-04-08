@@ -3,6 +3,7 @@ import { CliUx } from "@oclif/core";
 import degit from "degit";
 import { existsSync, renameSync, writeFileSync } from "fs";
 import { join } from "path";
+import { replaceInFileSync } from "replace-in-file";
 import { exec } from "shelljs";
 
 class CloneApp extends Command {
@@ -23,6 +24,12 @@ class CloneApp extends Command {
     const d = degit("vitejs/vite/packages/create-vite/template-react-ts");
     await d.clone(name);
     CliUx.ux.action.stop();
+
+    replaceInFileSync({
+      files: [`${name}/package.json`],
+      from: `"name": "vite-react-typescript-starter",`,
+      to: `"name": "${name}",`,
+    });
 
     CliUx.ux.action.start("Install with prettier code");
     exec(`cd ${name} && git init`);
