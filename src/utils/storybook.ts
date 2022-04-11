@@ -20,7 +20,7 @@ class StorybookApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(StorybookApp.description);
 
-    execaCommandSync(`cd ${name} && npx sb init`);
+    await execaCommandSync(`cd ${name} && npx sb init`);
 
     CliUx.ux.action.stop();
   }

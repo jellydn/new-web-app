@@ -26,11 +26,10 @@ class PresetApp extends Command {
     CliUx.ux.action.start(PresetApp.description);
     const d = degit(`jellydn/new-web-app/templates/${flags.preset}-preset`);
     await d.clone(name);
-    CliUx.ux.action.stop();
 
     CliUx.ux.action.start("Install");
-    execaCommandSync(`cd ${name} && git init`);
-    execaCommandSync(`cd ${name} && yarn install`);
+    await execaCommandSync(`cd ${name} && git init`);
+    await execaCommandSync(`cd ${name} && yarn install`);
     CliUx.ux.action.stop();
   }
 }

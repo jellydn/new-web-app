@@ -1,6 +1,7 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 
+import { execaCommandSync } from "../../exca";
 import AirbnbApp from "../../utils/airbnb.js";
 import CloneApp from "../../utils/clone.js";
 import CypressApp from "../../utils/cypress.js";
@@ -9,7 +10,6 @@ import ReactHookFormApp from "../../utils/react-hook-form.js";
 import ReactQueryApp from "../../utils/react-query.js";
 import StorybookApp from "../../utils/storybook.js";
 import TailwindApp from "../../utils/tailwind.js";
-import { execaCommandSync } from "../../exca";
 
 export default class ReactCommand extends Command {
   static description = "React App Generator";
@@ -134,7 +134,7 @@ export default class ReactCommand extends Command {
       await CypressApp.run(["--name", name]);
     }
 
-    execaCommandSync(`cd ${name} && npx prettier . --write`);
+    await execaCommandSync(`cd ${name} && npx prettier . --write`);
     this.onSuccess(name);
   }
 

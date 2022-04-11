@@ -20,13 +20,11 @@ class TailwindApp extends Command {
     const { flags } = await this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(TailwindApp.description);
-    CliUx.ux.action.stop();
 
     CliUx.ux.action.start("Setting up Tailwind CSS");
-    execaCommandSync(
+    await execaCommandSync(
       `cd ${name} && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p`
     );
-    CliUx.ux.action.stop();
 
     CliUx.ux.action.start(
       "Configure Tailwind to remove unused styles in production"

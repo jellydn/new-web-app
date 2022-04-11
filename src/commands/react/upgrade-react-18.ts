@@ -1,4 +1,4 @@
-import { Command } from "@oclif/core";
+import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 
 import { execaCommandSync } from "../../exca";
@@ -7,13 +7,26 @@ import { execaCommandSync } from "../../exca";
 class UpgradeReact18App extends Command {
   static description = "Upgrade to React 18";
 
+  static flags = {
+    directory: Flags.string({
+      char: "d",
+      description: "folder name to update",
+    }),
+  };
+
   async run(): Promise<void> {
     CliUx.ux.action.start(UpgradeReact18App.description);
-    execaCommandSync(`yarn add react react-dom`);
-    execaCommandSync(`yarn add -D @types/react @types/react-dom`);
-    execaCommandSync(`npx types-react-codemod preset-18 .`);
-    this
-      .log(`React 18 introduces a new root API which provides better ergonomics for managing roots. The new root API also enables the new concurrent renderer, which allows you to opt-into concurrent features.
+    const { flags } = await this.parse(UpgradeReact18App);
+    const directory = flags.directory ?? ".";
+
+    if (directory !== ".") {
+      await execaCommandSync(`cd ${directory}`);
+    }
+
+    await execaCommandSync(`yarn add react react-dom`);
+    await execaCommandSync(`yarn add -D @types/react @types/react-dom`);
+    await execaCommandSync(`npx types-react-codemod preset-18 .`);
+    this.log(`React 18 introduces a new root API. Please adjust as below.
     // Before
     import { render } from 'react-dom';
     const container = document.getElementById('app');

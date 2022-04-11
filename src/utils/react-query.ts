@@ -21,7 +21,7 @@ class ReactQueryApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(ReactQueryApp.description);
 
-    execaCommandSync(`cd ${name} && yarn add react-query`);
+    await execaCommandSync(`cd ${name} && yarn add react-query`);
 
     replaceInFileSync({
       files: [`${name}/src/App.tsx`],

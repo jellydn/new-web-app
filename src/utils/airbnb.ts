@@ -21,7 +21,7 @@ class AirbnbApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(AirbnbApp.description);
 
-    execaCommandSync(
+    await execaCommandSync(
       `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`
     );
 
@@ -39,7 +39,7 @@ class AirbnbApp extends Command {
     writeFileSync(`${name}/.eslintrc.js`, linter);
     writeFileSync(`${name}/.eslintignore`, ".eslintrc.js");
 
-    execaCommandSync(`cd ${name} && npx mrm@2 lint-staged`);
+    await execaCommandSync(`cd ${name} && npx mrm@2 lint-staged`);
 
     CliUx.ux.action.stop();
   }

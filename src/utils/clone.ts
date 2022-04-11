@@ -24,7 +24,6 @@ class CloneApp extends Command {
     CliUx.ux.action.start(CloneApp.description);
     const d = degit("vitejs/vite/packages/create-vite/template-react-ts");
     await d.clone(name);
-    CliUx.ux.action.stop();
 
     replaceInFileSync({
       files: [`${name}/package.json`],
@@ -33,8 +32,8 @@ class CloneApp extends Command {
     });
 
     CliUx.ux.action.start("Install with prettier code");
-    execaCommandSync(`cd ${name} && git init`);
-    execaCommandSync(
+    await execaCommandSync(`cd ${name} && git init`);
+    await execaCommandSync(
       `cd ${name} && yarn add -D prettier @trivago/prettier-plugin-sort-imports`
     );
     if (existsSync(join(name, "_gitignore"))) {

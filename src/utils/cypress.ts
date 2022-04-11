@@ -20,7 +20,7 @@ class AirbnbApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(AirbnbApp.description);
 
-    execaCommandSync(`cd ${name} && yarn add cypress --dev`);
+    await execaCommandSync(`cd ${name} && yarn add cypress --dev`);
 
     CliUx.ux.action.stop();
   }

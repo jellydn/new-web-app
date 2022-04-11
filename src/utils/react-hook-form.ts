@@ -20,10 +20,9 @@ class ReactHookFormApp extends Command {
     const { flags } = await this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(ReactHookFormApp.description);
-    execaCommandSync(
+    await execaCommandSync(
       `cd ${name} && yarn add react-hook-form @hookform/devtools`
     );
-    CliUx.ux.action.stop();
 
     CliUx.ux.action.start("Add react-hook-form example");
     replaceInFileSync({
