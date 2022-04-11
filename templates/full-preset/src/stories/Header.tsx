@@ -10,7 +10,7 @@ export interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({
+export const Header: React.FC<React.PropsWithChildren<HeaderProps>> = ({
   user,
   onLogin,
   onLogout,
