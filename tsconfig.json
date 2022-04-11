@@ -1,13 +1,17 @@
 {
+  "ts-node": {
+    "esm": true
+  },
   "compilerOptions": {
     "declaration": true,
     "importHelpers": true,
-    "module": "commonjs",
+    "module": "ES2020",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
-    "target": "esnext",
-    "esModuleInterop": true
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "Node"
   },
   "include": [
     "src/**/*"

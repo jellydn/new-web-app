@@ -1,6 +1,7 @@
 import { Command } from "@oclif/core";
 import { CliUx } from "@oclif/core";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../../exca";
 
 // https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
 class UpgradeReact18App extends Command {
@@ -8,9 +9,9 @@ class UpgradeReact18App extends Command {
 
   async run(): Promise<void> {
     CliUx.ux.action.start(UpgradeReact18App.description);
-    exec(`yarn add react react-dom`);
-    exec(`yarn add -D @types/react @types/react-dom`);
-    exec(`npx types-react-codemod preset-18 .`);
+    execaCommandSync(`yarn add react react-dom`);
+    execaCommandSync(`yarn add -D @types/react @types/react-dom`);
+    execaCommandSync(`npx types-react-codemod preset-18 .`);
     this
       .log(`React 18 introduces a new root API which provides better ergonomics for managing roots. The new root API also enables the new concurrent renderer, which allows you to opt-into concurrent features.
     // Before
@@ -29,4 +30,4 @@ Please adjust on your app as above.!`);
   }
 }
 
-export = UpgradeReact18App;
+export default UpgradeReact18App;

@@ -1,7 +1,8 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 import { replaceInFileSync } from "replace-in-file";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://react-query.tanstack.com/installation
 class ReactQueryApp extends Command {
@@ -20,7 +21,7 @@ class ReactQueryApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(ReactQueryApp.description);
 
-    exec(`cd ${name} && yarn add react-query`);
+    execaCommandSync(`cd ${name} && yarn add react-query`);
 
     replaceInFileSync({
       files: [`${name}/src/App.tsx`],
@@ -56,4 +57,4 @@ class ReactQueryApp extends Command {
   }
 }
 
-export = ReactQueryApp;
+export default ReactQueryApp;

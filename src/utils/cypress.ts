@@ -1,6 +1,7 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier
 class AirbnbApp extends Command {
@@ -19,10 +20,10 @@ class AirbnbApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(AirbnbApp.description);
 
-    exec(`cd ${name} && yarn add cypress --dev`);
+    execaCommandSync(`cd ${name} && yarn add cypress --dev`);
 
     CliUx.ux.action.stop();
   }
 }
 
-export = AirbnbApp;
+export default AirbnbApp;

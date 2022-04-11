@@ -1,7 +1,8 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 import { replaceInFileSync } from "replace-in-file";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://www.react-hook-form.com/get-started
 class ReactHookFormApp extends Command {
@@ -19,7 +20,9 @@ class ReactHookFormApp extends Command {
     const { flags } = await this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(ReactHookFormApp.description);
-    exec(`cd ${name} && yarn add react-hook-form @hookform/devtools`);
+    execaCommandSync(
+      `cd ${name} && yarn add react-hook-form @hookform/devtools`
+    );
     CliUx.ux.action.stop();
 
     CliUx.ux.action.start("Add react-hook-form example");
@@ -78,4 +81,4 @@ class ReactHookFormApp extends Command {
   }
 }
 
-export = ReactHookFormApp;
+export default ReactHookFormApp;

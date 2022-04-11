@@ -4,7 +4,8 @@ import degit from "degit";
 import { existsSync, renameSync, writeFileSync } from "fs";
 import { join } from "path";
 import { replaceInFileSync } from "replace-in-file";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 class CloneApp extends Command {
   static description = "Scaffolding Your Vite Project";
@@ -32,8 +33,8 @@ class CloneApp extends Command {
     });
 
     CliUx.ux.action.start("Install with prettier code");
-    exec(`cd ${name} && git init`);
-    exec(
+    execaCommandSync(`cd ${name} && git init`);
+    execaCommandSync(
       `cd ${name} && yarn add -D prettier @trivago/prettier-plugin-sort-imports`
     );
     if (existsSync(join(name, "_gitignore"))) {
@@ -51,4 +52,4 @@ class CloneApp extends Command {
   }
 }
 
-export = CloneApp;
+export default CloneApp;

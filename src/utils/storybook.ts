@@ -1,6 +1,7 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://storybook.js.org/docs/react/get-started/install
 class StorybookApp extends Command {
@@ -19,10 +20,10 @@ class StorybookApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(StorybookApp.description);
 
-    exec(`cd ${name} && npx sb init`);
+    execaCommandSync(`cd ${name} && npx sb init`);
 
     CliUx.ux.action.stop();
   }
 }
 
-export = StorybookApp;
+export default StorybookApp;

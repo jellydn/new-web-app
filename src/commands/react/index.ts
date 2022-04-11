@@ -1,15 +1,15 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
-import { exec } from "shelljs";
 
-import AirbnbApp from "../../utils/airbnb";
-import CloneApp from "../../utils/clone";
-import CypressApp from "../../utils/cypress";
-import PresetApp from "../../utils/preset";
-import ReactHookFormApp from "../../utils/react-hook-form";
-import ReactQueryApp from "../../utils/react-query";
-import StorybookApp from "../../utils/storybook";
-import TailwindApp from "../../utils/tailwind";
+import AirbnbApp from "../../utils/airbnb.js";
+import CloneApp from "../../utils/clone.js";
+import CypressApp from "../../utils/cypress.js";
+import PresetApp from "../../utils/preset.js";
+import ReactHookFormApp from "../../utils/react-hook-form.js";
+import ReactQueryApp from "../../utils/react-query.js";
+import StorybookApp from "../../utils/storybook.js";
+import TailwindApp from "../../utils/tailwind.js";
+import { execaCommandSync } from "../../exca";
 
 export default class ReactCommand extends Command {
   static description = "React App Generator";
@@ -134,7 +134,7 @@ export default class ReactCommand extends Command {
       await CypressApp.run(["--name", name]);
     }
 
-    exec(`cd ${name} && npx prettier . --write`);
+    execaCommandSync(`cd ${name} && npx prettier . --write`);
     this.onSuccess(name);
   }
 

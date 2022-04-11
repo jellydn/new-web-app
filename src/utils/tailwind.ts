@@ -2,7 +2,8 @@ import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 import { writeFileSync } from "fs";
 import { replaceInFileSync } from "replace-in-file";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://tailwindcss.com/docs/guides/vue-3-vite#install-tailwind-via-npm
 class TailwindApp extends Command {
@@ -22,7 +23,7 @@ class TailwindApp extends Command {
     CliUx.ux.action.stop();
 
     CliUx.ux.action.start("Setting up Tailwind CSS");
-    exec(
+    execaCommandSync(
       `cd ${name} && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p`
     );
     CliUx.ux.action.stop();
@@ -45,4 +46,4 @@ class TailwindApp extends Command {
   }
 }
 
-export = TailwindApp;
+export default TailwindApp;

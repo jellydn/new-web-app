@@ -61,7 +61,7 @@ npm install -g new-web-app yarn
 
 - [`new-web-app help [COMMAND]`](#new-web-app-help-command)
 - [`new-web-app react`](#new-web-app-react)
-- [`new-web-app react react-18`](#new-web-app-react-react-18)
+- [`new-web-app react upgrade-react-18`](#new-web-app-react-upgrade-react-18)
 
 ## `new-web-app help [COMMAND]`
 
@@ -120,16 +120,13 @@ EXAMPLES
 
 _See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.2.5/dist/commands/react/index.ts)_
 
-## `new-web-app react react-18`
+## `new-web-app react upgrade-react-18`
 
 Upgrade to React 18
 
 ```
 USAGE
-  $ new-web-app react react-18 [-n <value>]
-
-FLAGS
-  -n, --name=<value>  folder name to create
+  $ new-web-app react upgrade-react-18
 
 DESCRIPTION
   Upgrade to React 18

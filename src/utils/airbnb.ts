@@ -1,7 +1,8 @@
 import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 import { writeFileSync } from "fs";
-import { exec } from "shelljs";
+
+import { execaCommandSync } from "../exca";
 
 // https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier
 class AirbnbApp extends Command {
@@ -20,7 +21,7 @@ class AirbnbApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
     CliUx.ux.action.start(AirbnbApp.description);
 
-    exec(
+    execaCommandSync(
       `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`
     );
 
@@ -38,10 +39,10 @@ class AirbnbApp extends Command {
     writeFileSync(`${name}/.eslintrc.js`, linter);
     writeFileSync(`${name}/.eslintignore`, ".eslintrc.js");
 
-    exec(`cd ${name} && npx mrm@2 lint-staged`);
+    execaCommandSync(`cd ${name} && npx mrm@2 lint-staged`);
 
     CliUx.ux.action.stop();
   }
 }
 
-export = AirbnbApp;
+export default AirbnbApp;
