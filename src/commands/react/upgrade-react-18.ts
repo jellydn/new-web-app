@@ -38,7 +38,7 @@ class UpgradeReact18App extends Command {
     const root = createRoot(container);
     root.render(<App tab="home" />);
 
-Please adjust on your app as above.!`);
+    Happy hacking!`);
     CliUx.ux.action.stop();
   }
 }
