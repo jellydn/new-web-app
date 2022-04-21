@@ -119,7 +119,7 @@ EXAMPLES
   $ npx new-web-app react --name=react-app --airbnb=yes --react-query=yes
 ```
 
-_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.3.0/dist/commands/react/index.ts)_
+_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.3.1/dist/commands/react/index.ts)_
 
 ## `new-web-app react upgrade-react-18`
 
