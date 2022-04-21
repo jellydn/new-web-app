@@ -2,6 +2,7 @@ import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 
 import { execaCommandSync } from "../../exca";
+import { getPkgClient } from "../../helpers/get-pkg-client";
 import AirbnbApp from "../../utils/airbnb.js";
 import CloneApp from "../../utils/clone.js";
 import CypressApp from "../../utils/cypress.js";
@@ -54,8 +55,8 @@ export default class ReactCommand extends Command {
   };
 
   static examples = [
-    "$ npx new-web-app create -n=react-app -a=yes -q=yes",
-    "$ npx new-web-app --name=react-app --airbnb=yes --react-query=yes",
+    "$ npx new-web-app react -n=react-app -a=yes -q=yes",
+    "$ npx new-web-app react --name=react-app --airbnb=yes --react-query=yes",
   ];
 
   // TODO: detect yarn/npm
@@ -70,7 +71,13 @@ export default class ReactCommand extends Command {
       cypress,
     } = await this.parseInputs();
 
-    // optimise speed by use preset template
+    // install yarn if not exists
+    const pkgClient = getPkgClient();
+    if (pkgClient !== "yarn") {
+      await execaCommandSync("npm install --global yarn");
+    }
+
+    // optimize speed by use preset template
     if (
       tailwind === "yes" &&
       airbnb === "yes" &&

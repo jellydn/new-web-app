@@ -1,16 +1,59 @@
 {
   "name": "new-web-app",
-  "description": "Frontend app generator",
   "version": "0.3.0",
+  "description": "Frontend app generator",
+  "keywords": [
+    "new-web-app",
+    "new web app",
+    "web app",
+    "frontend generator",
+    "app generator",
+    "react app generator"
+  ],
+  "homepage": "https://github.com/jellydn/new-web-app",
+  "bugs": "https://github.com/jellydn/new-web-app/issues",
+  "repository": "jellydn/new-web-app",
+  "license": "MIT",
   "author": "Huynh Duc Dung @jellydn",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "lib/index.d.ts",
+  "typings": "dist/index.d.ts",
   "bin": {
     "new-web-app": "./bin/run"
   },
-  "bugs": "https://github.com/jellydn/new-web-app/issues",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "prepare": "husky install",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "posttest": "yarn lint",
+    "vercel-build": "cd website && yarn install && yarn build",
+    "version": "oclif readme && git add README.md"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  },
   "dependencies": {
-    "@oclif/core": "^1.6.4",
+    "@oclif/core": "^1.7.0",
     "@oclif/plugin-help": "^5.1.12",
     "@oclif/plugin-plugins": "^2.1.0",
+    "@oclif/plugin-update": "^3.0.0",
     "degit": "^2.8.4",
     "execa": "5.1.1",
     "replace-in-file": "^6.3.2"
@@ -21,7 +64,7 @@
     "@swc/helpers": "^0.3.8",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/degit": "2.8.3",
-    "@types/node": "17.0.23",
+    "@types/node": "16.11.27",
     "@types/shelljs": "0.8.11",
     "@typescript-eslint/eslint-plugin": "5.20.0",
     "@typescript-eslint/parser": "5.20.0",
@@ -36,35 +79,18 @@
     "ts-node": "10.7.0",
     "tslib": "2.3.1",
     "tsup": "5.12.6",
-    "typescript": "4.7.0-dev.20220418"
+    "typescript": "4.6.3"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "files": [
-    "/bin",
-    "/dist",
-    "/npm-shrinkwrap.json",
-    "/oclif.manifest.json"
-  ],
-  "homepage": "https://github.com/jellydn/new-web-app",
-  "keywords": [
-    "new-web-app",
-    "new web app",
-    "web app",
-    "frontend generator",
-    "app generator",
-    "react app generator"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "oclif": {
     "bin": "new-web-app",
     "dirname": "new-web-app",
     "commands": "./dist/commands",
     "plugins": [
-      "@oclif/plugin-help"
+      "@oclif/plugin-help",
+      "@oclif/plugin-update"
     ],
     "topicSeparator": " ",
     "topics": {
@@ -72,18 +98,6 @@
         "description": "Create a new React app with ViteJs"
       }
     }
-  },
-  "repository": "jellydn/new-web-app",
-  "scripts": {
-    "build": "tsup",
-    "lint": "eslint . --ext .ts --config .eslintrc",
-    "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
-    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
-    "version": "oclif readme && git add README.md",
-    "vercel-build": "cd website && yarn install && yarn build",
-    "prepare": "husky install"
   },
   "tsup": {
     "entry": [
@@ -96,17 +110,5 @@
       "esm",
       "cjs"
     ]
-  },
-  "module": "dist/esm/index.js",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/esm/index.js"
-    }
-  },
-  "types": "lib/index.d.ts",
-  "lint-staged": {
-    "*.ts": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
   }
 }

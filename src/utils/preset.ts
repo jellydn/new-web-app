@@ -3,6 +3,7 @@ import { CliUx } from "@oclif/core";
 import degit from "degit";
 
 import { execaCommandSync } from "../exca";
+import { isInGitRepository } from "../helpers/git";
 
 class PresetApp extends Command {
   static description = "Scaffolding Your Vite Project With Preset";
@@ -28,7 +29,10 @@ class PresetApp extends Command {
     await d.clone(name);
 
     CliUx.ux.action.start("Install");
-    await execaCommandSync(`cd ${name} && git init`);
+    // only call git init if that is not in git directory
+    const isGitDirectory = await isInGitRepository();
+    if (!isGitDirectory) await execaCommandSync(`cd ${name} && git init`);
+
     await execaCommandSync(`cd ${name} && yarn install`);
     CliUx.ux.action.stop();
   }

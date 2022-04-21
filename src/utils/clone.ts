@@ -6,6 +6,7 @@ import { join } from "path";
 import { replaceInFileSync } from "replace-in-file";
 
 import { execaCommandSync } from "../exca";
+import { isInGitRepository } from "../helpers/git";
 
 class CloneApp extends Command {
   static description = "Scaffolding Your Vite Project";
@@ -32,7 +33,10 @@ class CloneApp extends Command {
     });
 
     CliUx.ux.action.start("Install with prettier code");
-    await execaCommandSync(`cd ${name} && git init`);
+    // only call git init if that is not in git directory
+    const isGitDirectory = await isInGitRepository();
+    if (!isGitDirectory) await execaCommandSync(`cd ${name} && git init`);
+
     await execaCommandSync(
       `cd ${name} && yarn add -D prettier @trivago/prettier-plugin-sort-imports`
     );

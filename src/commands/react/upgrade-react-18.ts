@@ -2,6 +2,7 @@ import { Command, Flags } from "@oclif/core";
 import { CliUx } from "@oclif/core";
 
 import { execaCommandSync } from "../../exca";
+import { getPkgClient } from "../../helpers/get-pkg-client";
 
 // https://reactjs.org/blog/2022/03/08/react-18-upgrade-guide.html
 class UpgradeReact18App extends Command {
@@ -21,6 +22,12 @@ class UpgradeReact18App extends Command {
 
     if (directory !== ".") {
       await execaCommandSync(`cd ${directory}`);
+    }
+
+    // install yarn if not exists
+    const pkgClient = getPkgClient();
+    if (pkgClient !== "yarn") {
+      await execaCommandSync("npm install --global yarn");
     }
 
     await execaCommandSync(`yarn add react react-dom`);
