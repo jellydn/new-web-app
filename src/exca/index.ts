@@ -8,10 +8,15 @@ async function execaCommandSync(
     shell: true,
   }
 ) {
-  const subprocess = execa.command(command, options);
-  subprocess.stdout?.pipe(process.stdout);
-  const { stdout } = await subprocess;
-  return stdout;
+  try {
+    const subprocess = execa.command(command, options);
+    subprocess.stdout?.pipe(process.stdout);
+    const { stdout } = await subprocess;
+    return stdout;
+  } catch (error) {
+    console.error(error);
+    return error;
+  }
 }
 
 export { execaCommandSync };

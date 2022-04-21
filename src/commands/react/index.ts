@@ -55,8 +55,8 @@ export default class ReactCommand extends Command {
   };
 
   static examples = [
-    "$ npx new-web-app react -n=react-app -a=yes -q=yes",
-    "$ npx new-web-app react --name=react-app --airbnb=yes --react-query=yes",
+    "$ npx new-web-app@latest react -n=react-app -a=yes -q=yes",
+    "$ npx new-web-app@latest react --name=react-app --airbnb=yes --react-query=yes",
   ];
 
   // TODO: detect yarn/npm
