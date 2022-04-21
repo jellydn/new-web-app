@@ -1,3 +1,10 @@
+---
+id: usage
+title: Usage
+sidebar_label: Usage
+slug: /
+---
+
 # Welcome to new-web-app 👋
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io) [![Version](https://img.shields.io/npm/v/new-web-app.svg)](https://npmjs.org/package/new-web-app) [![Downloads/week](https://img.shields.io/npm/dw/new-web-app.svg)](https://npmjs.org/package/new-web-app) [![License](https://img.shields.io/npm/l/new-web-app.svg)](https://github.com/jellydn/new-web-app/blob/master/package.json)![Prerequisite](https://img.shields.io/badge/node-%3E%3D14.0.0-blue.svg) [![Twitter: jellydn](https://img.shields.io/twitter/follow/jellydn.svg?style=social)](https://twitter.com/jellydn)
@@ -114,7 +121,7 @@ EXAMPLES
   $ npx new-web-app@latest react --name=react-app --airbnb=yes --react-query=yes
 ```
 
-_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.3.1/dist/commands/react/index.ts)_
+_See code: [src/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.3.2/src/commands/react/index.ts)_
 
 ## `new-web-app react upgrade-react-18`
 
