@@ -50,18 +50,18 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@oclif/core": "^1.8.0",
+    "@oclif/core": "^1.9.0",
     "@oclif/plugin-help": "^5.1.12",
     "@oclif/plugin-plugins": "^2.1.0",
     "@oclif/plugin-update": "^3.0.0",
     "degit": "^2.8.4",
     "execa": "5.1.1",
-    "replace-in-file": "^6.3.2"
+    "replace-in-file": "^6.3.3"
   },
   "devDependencies": {
     "@oclif/dev-cli": "1.26.10",
     "@swc/core": "1.2.194",
-    "@swc/helpers": "0.3.15",
+    "@swc/helpers": "0.3.16",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/degit": "2.8.3",
     "@types/node": "16.11.36",

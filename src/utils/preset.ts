@@ -25,7 +25,9 @@ class PresetApp extends Command {
     const name = flags.name ?? "vite-react-ts-app";
 
     CliUx.ux.action.start(PresetApp.description);
-    const d = degit(`jellydn/new-web-app/templates/${flags.preset}-preset`);
+    const d = degit(
+      `jellydn/new-web-app/templates/react/${flags.preset}-preset`
+    );
     await d.clone(name);
 
     CliUx.ux.action.start("Install");
