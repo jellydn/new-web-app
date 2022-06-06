@@ -10,6 +10,8 @@
 
 ### 🏠 [Homepage](https://github.com/jellydn/new-web-app)
 
+[![Intro New-Web-App CLI](https://img.youtube.com/vi/fflgltdSpW8/0.jpg)](https://www.youtube.com/watch?v=fflgltdSpW8)
+
 <!-- toc -->
 
 - [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
