@@ -61,7 +61,7 @@
   "devDependencies": {
     "@oclif/dev-cli": "1.26.10",
     "@swc/core": "1.2.203",
-    "@swc/helpers": "0.4.0",
+    "@swc/helpers": "0.4.1",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/degit": "2.8.3",
     "@types/node": "16.11.40",
