@@ -50,7 +50,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@oclif/core": "^1.9.0",
+    "@oclif/core": "^1.9.3",
     "@oclif/plugin-help": "^5.1.12",
     "@oclif/plugin-plugins": "^2.1.0",
     "@oclif/plugin-update": "^3.0.0",
