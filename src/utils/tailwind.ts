@@ -30,9 +30,9 @@ class TailwindApp extends Command {
       "Configure Tailwind to remove unused styles in production"
     );
     replaceInFileSync({
-      files: [`${name}/tailwind.config.js`],
-      from: "purge: [],",
-      to: "purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], mode: 'jit',",
+      files: [`${name}/tailwind.config.cjs`],
+      from: "content: [],",
+      to: "content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],",
     });
     const styles = `/* ./src/index.css */
 @tailwind base;
