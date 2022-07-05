@@ -39,7 +39,9 @@ class AirbnbApp extends Command {
     writeFileSync(`${name}/.eslintrc.js`, linter);
     writeFileSync(`${name}/.eslintignore`, ".eslintrc.js");
 
-    await execaCommandSync(`cd ${name} && npx mrm@2 lint-staged`);
+    await execaCommandSync(
+      `cd ${name} && npx husky-init && npx mrm@2 lint-staged`
+    );
 
     CliUx.ux.action.stop();
   }
