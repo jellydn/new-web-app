@@ -34,7 +34,7 @@
     "autoprefixer": "10.4.7",
     "babel-loader": "8.2.5",
     "cypress": "10.3.0",
-    "eslint": "8.19.0",
+    "eslint": "8.20.0",
     "eslint-config-productsway": "0.1.15",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
