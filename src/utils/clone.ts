@@ -45,11 +45,18 @@ class CloneApp extends Command {
     }
 
     const prettier = `{
-          "printWidth": 80,
-          "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
-          "importOrderSeparation": true,
-          "importOrderSortSpecifiers": true
-        }`;
+      "plugins": [
+        "@trivago/prettier-plugin-sort-imports"
+      ],
+      "importOrder": [
+        "^@core/(.*)$",
+        "^@server/(.*)$",
+        "^@ui/(.*)$",
+        "^[./]"
+      ],
+      "importOrderSeparation": true,
+      "importOrderSortSpecifiers": true
+    }`;
     writeFileSync(`${name}/.prettierrc`, prettier);
     CliUx.ux.action.stop();
   }
