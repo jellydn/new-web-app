@@ -1143,10 +1143,10 @@
     "@swc/core-win32-ia32-msvc" "1.2.244"
     "@swc/core-win32-x64-msvc" "1.2.244"
 
-"@swc/helpers@0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.7.tgz#25a32e462e799a5a102eb9c241f73bbc4cb806a7"
-  integrity sha512-jJKr/2JOivCQxb5Xpli3asedRLH34QgJ3G+7gm6CoCOwt/LDDX9g67OuxvjFOiYZfngWYB66ZbjU6cUNtQdavg==
+"@swc/helpers@0.4.11":
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.11.tgz#db23a376761b3d31c26502122f349a21b592c8de"
+  integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
   dependencies:
     tslib "^2.4.0"
 
