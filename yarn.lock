@@ -4930,10 +4930,10 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
-oclif@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.1.2.tgz#9a26384f1a2a2201ee51281a5376acc4c84dfdf5"
-  integrity sha512-zxKiCOWKLlFGCwPbajxyC1HLSudwTjgSujOf5oR4dsxHkNIRCvJ9VAQWCPG4BW+p/+n0G9E2OnEM8Y25nfJwuw==
+oclif@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.0.tgz#2760e97803bf35771103e20b50697b99f574ba0d"
+  integrity sha512-OknO1OGKNzdrE0Hz2/4nz60dLXJ0FKHGJ1mkC7GBWSMW3SMgGBsbfiWyiAXBLoBfva3W8R32CE8n8rBXiH3U2Q==
   dependencies:
     "@oclif/core" "^1.9.9"
     "@oclif/plugin-help" "^5.1.12"
