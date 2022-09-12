@@ -68,7 +68,7 @@
     "@types/shelljs": "0.8.11",
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
-    "eslint": "8.23.0",
+    "eslint": "8.23.1",
     "eslint-config-productsway": "0.1.15",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
