@@ -5053,12 +5053,12 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
-oclif@3.2.18:
-  version "3.2.18"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.18.tgz#e122a993cf1f0802c05d5bd4dc8e5084f0253cab"
-  integrity sha512-XIuyZJ2FDfwe2QFOtlNq3v73WSOURN71HpZErsaE1VjBp/f65DiG2VbE+U8huK1PSO7Rdk+yw7SWabjMCigQdA==
+oclif@3.2.19:
+  version "3.2.19"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.19.tgz#a2d2c412e21f627172b84e789b8587d416b86329"
+  integrity sha512-LnJpX+YmUdFIAr86oT/++LTh9DhzAu40BhAR+dQ4H4wbOJtDylRgMnH8pAnr+Nw7DZuWe5tKTua9u1H63gEGtg==
   dependencies:
-    "@oclif/core" "^1.16.4"
+    "@oclif/core" "^1.18.0"
     "@oclif/plugin-help" "^5.1.15"
     "@oclif/plugin-not-found" "^2.3.5"
     "@oclif/plugin-warn-if-update-available" "^2.0.6"
