@@ -64,7 +64,7 @@
     "@swc/helpers": "0.4.12",
     "@trivago/prettier-plugin-sort-imports": "3.4.0",
     "@types/degit": "2.8.3",
-    "@types/node": "16.18.2",
+    "@types/node": "18.11.7",
     "@types/shelljs": "0.8.11",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
