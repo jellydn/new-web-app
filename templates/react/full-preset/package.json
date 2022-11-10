@@ -33,7 +33,7 @@
     "@vitejs/plugin-react": "2.2.0",
     "autoprefixer": "10.4.13",
     "babel-loader": "9.1.0",
-    "cypress": "10.11.0",
+    "cypress": "11.0.0",
     "eslint": "8.27.0",
     "eslint-config-productsway": "0.1.16",
     "husky": "8.0.2",
