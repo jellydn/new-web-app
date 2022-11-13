@@ -656,7 +656,7 @@
     is-wsl "^2.1.1"
     tslib "^2.0.0"
 
-"@oclif/core@1.20.4", "@oclif/core@^1.18.0", "@oclif/core@^1.20.2":
+"@oclif/core@1.20.4", "@oclif/core@^1.18.0", "@oclif/core@^1.20.4":
   version "1.20.4"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.20.4.tgz#7378b52e1f1b502e383ffb07f95dffc9fd8588ff"
   integrity sha512-giug32M4YhSYNYKQwE1L57/+k5gp1+Bq3/0vKNQmzAY1tizFGhvBJc6GIRZasHjU+xtZLutQvrVrJo7chX3hxg==
@@ -890,12 +890,12 @@
     widest-line "^3.1.0"
     wrap-ansi "^6.2.0"
 
-"@oclif/plugin-help@5.1.18":
-  version "5.1.18"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.18.tgz#8f1d864f76ee151e840e3d20de5a05f00ed91a54"
-  integrity sha512-EICYITNwc155RHBiRnhUmvuc5oEuRE+9B+8rErw4OKKpPfZ5edvth38e4QOONfDRjb3MHfNu0sds1aB3i/BikA==
+"@oclif/plugin-help@5.1.19":
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.19.tgz#43051772fefafe9bfe8823e2298103feb351b9c7"
+  integrity sha512-eQVRCFJOwRj8Tbqz8Lzd9GN38egwLCg+ohJ0xfg12CoXml03WqkfcFiAWkVwSWmLVrZUlUVrxfXKKkmpUaXZHg==
   dependencies:
-    "@oclif/core" "^1.20.2"
+    "@oclif/core" "^1.20.4"
 
 "@oclif/plugin-help@^5.1.16":
   version "5.1.16"
@@ -5091,12 +5091,12 @@ object.values@^1.1.5:
     define-properties "^1.1.3"
     es-abstract "^1.19.1"
 
-oclif@3.2.25:
-  version "3.2.25"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.25.tgz#a51a1a20daf45f37a3c9a0cb12693b5f7a40cd0c"
-  integrity sha512-1nwdWHOBW5DkMBBu3HNrwM+WIAL7kDLBeoM8BNJLbnE4hlxBmeubwQTF0oGzmv+0vUomWMiNSbQF7AfzFbwUwA==
+oclif@3.2.26:
+  version "3.2.26"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.26.tgz#ef4b671300101d746545cf65a79cb84e6127a940"
+  integrity sha512-WnMBKPj2OwMx/83dxGW2MxC95KLm0K6tJxLAB/6ncCqSkhk3qUESc2MhM5noR2ni2Yq+B6z7BJZd8UZYpTBBLw==
   dependencies:
-    "@oclif/core" "^1.20.0"
+    "@oclif/core" "^1.20.4"
     "@oclif/plugin-help" "^5.1.16"
     "@oclif/plugin-not-found" "^2.3.7"
     "@oclif/plugin-warn-if-update-available" "^2.0.6"

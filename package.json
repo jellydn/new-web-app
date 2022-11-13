@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@oclif/core": "1.20.4",
-    "@oclif/plugin-help": "5.1.18",
+    "@oclif/plugin-help": "5.1.19",
     "@oclif/plugin-plugins": "2.1.7",
     "@oclif/plugin-update": "3.0.6",
     "degit": "2.8.4",
@@ -73,7 +73,7 @@
     "husky": "8.0.2",
     "lint-staged": "13.0.3",
     "mocha": "10.1.0",
-    "oclif": "3.2.25",
+    "oclif": "3.2.26",
     "prettier": "2.7.1",
     "regenerator-runtime": "0.13.10",
     "shx": "0.3.4",
