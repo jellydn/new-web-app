@@ -16,7 +16,7 @@
     "@hookform/devtools": "4.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.39.3",
+    "react-hook-form": "7.39.4",
     "react-query": "3.39.2"
   },
   "devDependencies": {
@@ -27,9 +27,9 @@
     "@storybook/react": "6.5.13",
     "@trivago/prettier-plugin-sort-imports": "3.4.0",
     "@types/react": "18.0.25",
-    "@types/react-dom": "18.0.8",
-    "@typescript-eslint/eslint-plugin": "5.42.1",
-    "@typescript-eslint/parser": "5.42.1",
+    "@types/react-dom": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "5.43.0",
+    "@typescript-eslint/parser": "5.43.0",
     "@vitejs/plugin-react": "2.2.0",
     "autoprefixer": "10.4.13",
     "babel-loader": "9.1.0",
