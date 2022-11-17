@@ -75,7 +75,7 @@
     "mocha": "10.1.0",
     "oclif": "3.2.27",
     "prettier": "2.7.1",
-    "regenerator-runtime": "0.13.10",
+    "regenerator-runtime": "0.13.11",
     "shx": "0.3.4",
     "ts-node": "10.9.1",
     "tslib": "2.4.1",
