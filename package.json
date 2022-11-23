@@ -74,7 +74,7 @@
     "lint-staged": "13.0.3",
     "mocha": "10.1.0",
     "oclif": "3.2.28",
-    "prettier": "2.7.1",
+    "prettier": "2.8.0",
     "regenerator-runtime": "0.13.11",
     "shx": "0.3.4",
     "ts-node": "10.9.1",
