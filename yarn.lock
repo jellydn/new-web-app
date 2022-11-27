@@ -2981,7 +2981,7 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-github-slugger@^1.2.1, github-slugger@^1.4.0:
+github-slugger@^1.2.1, github-slugger@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.5.0.tgz#17891bbc73232051474d68bd867a34625c955f7d"
   integrity sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==
@@ -4488,10 +4488,10 @@ object.values@^1.1.5, object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-oclif@3.2.30:
-  version "3.2.30"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.30.tgz#19eb0c5588dc48762f34f8a9b4b61f8b9d3272eb"
-  integrity sha512-OIgqBXf1P3K61shEtAWtQvT7BY/vZu8+5I9uAcwlVnla0PdKnd1RLIp0KVtL+pRAcMa3k6AADEKzBE+Fm+ElJg==
+oclif@3.2.31:
+  version "3.2.31"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.31.tgz#07d3e3302b7cd2b1ef4e42b9fa6905b1faefd917"
+  integrity sha512-zJ0bDcvsBHOnnmCfNHFQYhkF8CuF80Ly7+6PF0093s3uHO/8u19FQmxQ9GtxcphibYKw35w6/74b2xGh0dfziA==
   dependencies:
     "@oclif/core" "^1.20.4"
     "@oclif/plugin-help" "^5.1.19"
@@ -4502,7 +4502,7 @@ oclif@3.2.30:
     debug "^4.3.3"
     find-yarn-workspace-root "^2.0.0"
     fs-extra "^8.1"
-    github-slugger "^1.4.0"
+    github-slugger "^1.5.0"
     lodash "^4.17.21"
     normalize-package-data "^3.0.3"
     qqjs "^0.3.11"
