@@ -16,11 +16,11 @@
     "@hookform/devtools": "4.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.39.6",
+    "react-hook-form": "7.39.7",
     "react-query": "3.39.2"
   },
   "devDependencies": {
-    "@babel/core": "7.20.2",
+    "@babel/core": "7.20.5",
     "@storybook/addon-actions": "6.5.13",
     "@storybook/addon-essentials": "6.5.13",
     "@storybook/addon-links": "6.5.13",
