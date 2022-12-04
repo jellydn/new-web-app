@@ -1924,7 +1924,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-concurrently@^7.5.0:
+concurrently@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-7.6.0.tgz#531a6f5f30cf616f355a4afb8f8fcb2bba65a49a"
   integrity sha512-BKtRgvcJGeZ4XttiDiNcFiRlxoAeZOseqUvyYRUp/Vtd+9p1ULmeoSqGsDA+2ivdeDFpqrJvGvmI+StKfKl5hw==
@@ -4493,17 +4493,17 @@ object.values@^1.1.5, object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-oclif@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.3.0.tgz#9f19a8a8de51c723eb3b593d48403fe6c052b734"
-  integrity sha512-4zmF0FiwQqm8rqM0/Ic6naKbWti1KkZ7wbghstEE5kHq2J/AKpqb0dq7Xx7QpDAiS+rmnizaQraGIlfaoGLKvA==
+oclif@3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.3.1.tgz#23d0a698e2e678d8300878147d17b24b3217f5d5"
+  integrity sha512-fREjnEmuPubSS4Tjwm+GFxy/wHPMBhR5wrV08fhDfWZs+tNVfRltvD6GIJJGERGJF2PvhKyZ6SXXMkVh8FOaUA==
   dependencies:
     "@oclif/core" "^1.20.4"
     "@oclif/plugin-help" "^5.1.19"
     "@oclif/plugin-not-found" "^2.3.7"
     "@oclif/plugin-warn-if-update-available" "^2.0.14"
     aws-sdk "^2.1231.0"
-    concurrently "^7.5.0"
+    concurrently "^7.6.0"
     debug "^4.3.3"
     find-yarn-workspace-root "^2.0.0"
     fs-extra "^8.1"
