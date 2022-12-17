@@ -55,7 +55,7 @@
     "@oclif/plugin-plugins": "2.1.9",
     "@oclif/plugin-update": "3.0.8",
     "degit": "2.8.4",
-    "execa": "5.1.1",
+    "execa": "6.1.0",
     "replace-in-file": "6.3.5"
   },
   "devDependencies": {
