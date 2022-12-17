@@ -50,7 +50,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@oclif/core": "1.21.0",
+    "@oclif/core": "1.22.0",
     "@oclif/plugin-help": "5.1.20",
     "@oclif/plugin-plugins": "2.1.8",
     "@oclif/plugin-update": "3.0.8",
@@ -64,11 +64,11 @@
     "@swc/helpers": "0.4.14",
     "@trivago/prettier-plugin-sort-imports": "4.0.0",
     "@types/degit": "2.8.3",
-    "@types/node": "18.11.15",
+    "@types/node": "18.11.16",
     "@types/shelljs": "0.8.11",
     "@typescript-eslint/eslint-plugin": "5.46.1",
     "@typescript-eslint/parser": "5.46.1",
-    "eslint": "8.29.0",
+    "eslint": "8.30.0",
     "eslint-config-productsway": "0.2.0",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
