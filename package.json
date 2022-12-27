@@ -50,7 +50,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@oclif/core": "1.22.0",
+    "@oclif/core": "1.23.0",
     "@oclif/plugin-help": "5.1.20",
     "@oclif/plugin-plugins": "2.1.9",
     "@oclif/plugin-update": "3.0.9",
@@ -73,7 +73,7 @@
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
     "mocha": "10.2.0",
-    "oclif": "3.4.2",
+    "oclif": "3.4.3",
     "prettier": "2.8.1",
     "regenerator-runtime": "0.13.11",
     "shx": "0.3.4",
