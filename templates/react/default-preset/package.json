@@ -20,7 +20,7 @@
     "@typescript-eslint/parser": "5.48.1",
     "@vitejs/plugin-react": "3.0.1",
     "cypress": "12.3.0",
-    "eslint": "8.31.0",
+    "eslint": "8.32.0",
     "eslint-config-productsway": "0.2.0",
     "husky": "8.0.3",
     "lint-staged": "13.1.0",
