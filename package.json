@@ -53,7 +53,7 @@
     "@oclif/core": "1.25.0",
     "@oclif/plugin-help": "5.2.0",
     "@oclif/plugin-plugins": "2.2.2",
-    "@oclif/plugin-update": "3.0.12",
+    "@oclif/plugin-update": "3.0.13",
     "degit": "2.8.4",
     "execa": "5.1.1",
     "replace-in-file": "6.3.5"
