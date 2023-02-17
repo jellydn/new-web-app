@@ -678,10 +678,10 @@
     is-wsl "^2.1.1"
     tslib "^2.5.0"
 
-"@oclif/core@2.1.4":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.1.4.tgz#536cf9d2367ba96c625076588b0cbccf3341829c"
-  integrity sha512-8rPS/gsjLgWp//nraRs5/yf7EkueFHBLRTMUli3yTu88XrQ2czbXIP2HsF2rxmtCqUUfXUTllHfr8OzqBs0Dcw==
+"@oclif/core@2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.1.5.tgz#c6a926fa53bf9e40d86369f405bcfda448b81464"
+  integrity sha512-vwktkhUFco3roVCaK20RLUQURb/IcPyvBQrZBn02mmNw+l5S4w4LEII60ArPY+pf0NjG5ElFKnrOXPaqaYxyYw==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
