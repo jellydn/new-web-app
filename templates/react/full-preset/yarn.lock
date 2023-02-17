@@ -10718,10 +10718,10 @@ synchronous-promise@^2.0.15:
   resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.17.tgz#38901319632f946c982152586f2caf8ddc25c032"
   integrity sha512-AsS729u2RHUfEra9xJrE39peJcc2stq2+poBXX8bcM08Y6g9j/i/PUzwNQqkaJde7Ntg1TO7bSREbR5sdosQ+g==
 
-tailwindcss@3.2.6:
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.6.tgz#9bedbc744a4a85d6120ce0cc3db024c551a5c733"
-  integrity sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==
+tailwindcss@3.2.7:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.2.7.tgz#5936dd08c250b05180f0944500c01dce19188c07"
+  integrity sha512-B6DLqJzc21x7wntlH/GsZwEXTBttVSl1FtCzC8WP4oBc/NKef7kaax5jeihkkCEWc831/5NDJ9gRNDK6NEioQQ==
   dependencies:
     arg "^5.0.2"
     chokidar "^3.5.3"
