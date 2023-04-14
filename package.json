@@ -73,7 +73,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.2.1",
     "mocha": "10.2.0",
-    "oclif": "3.8.0",
+    "oclif": "3.8.1",
     "prettier": "2.8.7",
     "regenerator-runtime": "0.13.11",
     "shx": "0.3.4",
