@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "resolutions": {
-    "postcss": "8.4.21"
+    "postcss": "8.4.22"
   },
   "dependencies": {
     "@hookform/devtools": "4.3.1",
@@ -38,7 +38,7 @@
     "eslint-config-productsway": "0.2.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.1",
-    "postcss": "8.4.21",
+    "postcss": "8.4.22",
     "prettier": "2.8.7",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4",
