@@ -50,7 +50,7 @@
     "*.{js,css,md}": "prettier --write"
   },
   "dependencies": {
-    "@oclif/core": "2.8.2",
+    "@oclif/core": "2.8.4",
     "@oclif/plugin-help": "5.2.9",
     "@oclif/plugin-plugins": "2.4.7",
     "@oclif/plugin-update": "3.1.13",
@@ -66,8 +66,8 @@
     "@types/degit": "2.8.3",
     "@types/node": "18.16.3",
     "@types/shelljs": "0.8.12",
-    "@typescript-eslint/eslint-plugin": "5.59.1",
-    "@typescript-eslint/parser": "5.59.1",
+    "@typescript-eslint/eslint-plugin": "5.59.2",
+    "@typescript-eslint/parser": "5.59.2",
     "eslint": "8.39.0",
     "eslint-config-productsway": "0.2.0",
     "husky": "8.0.3",
