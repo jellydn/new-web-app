@@ -590,7 +590,7 @@
     is-wsl "^2.1.1"
     tslib "^2.5.0"
 
-"@oclif/core@2.8.5":
+"@oclif/core@2.8.5", "@oclif/core@^2.8.5":
   version "2.8.5"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.8.5.tgz#7964057bbee5e91dae8b35e030e767f38e50a19e"
   integrity sha512-316DLfrHQDYmWDriI4Woxk9y1wVUrPN1sZdbQLHdOdlTA9v/twe7TdHpWOriEypfl6C85NWEJKc1870yuLtjrQ==
@@ -817,13 +817,13 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.13":
-  version "3.1.13"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.13.tgz#211a7932231a74433ef5f414971cf53f2b53584f"
-  integrity sha512-onacVivHn6/iGmKCApdp8GsarqFjbUKOIeM3C3iUJWUY4mm1NIOZMiXcAlF3AYKnpti2maXt2VNZwt1+7Mf4oQ==
+"@oclif/plugin-update@3.1.14":
+  version "3.1.14"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.14.tgz#b7a1170c0518285aced5ba621b4053b92f55c24b"
+  integrity sha512-AYzvGMrjD4m0EzEFKB003RYvp6StXPtdwhcZ+ZMwNCTRqm0imrNzodzYoUYFTWcFfiGnO3j58+0ZxLaSXi5ztg==
   dependencies:
     "@oclif/color" "^1.0.4"
-    "@oclif/core" "^2.8.2"
+    "@oclif/core" "^2.8.5"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
     filesize "^6.1.0"
