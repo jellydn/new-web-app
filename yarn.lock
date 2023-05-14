@@ -817,10 +817,10 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.14":
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.14.tgz#b7a1170c0518285aced5ba621b4053b92f55c24b"
-  integrity sha512-AYzvGMrjD4m0EzEFKB003RYvp6StXPtdwhcZ+ZMwNCTRqm0imrNzodzYoUYFTWcFfiGnO3j58+0ZxLaSXi5ztg==
+"@oclif/plugin-update@3.1.15":
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.15.tgz#74ed891adbf2fed1a4f77e2aae6974a80b06424f"
+  integrity sha512-c2/xDw/g2M3QSb+W5zYmKkL59Salju7YALyHBGfduis61LKszjfX7vwoHNNbFzMfQgBmRwLcwrROKNAM2sxh1A==
   dependencies:
     "@oclif/color" "^1.0.4"
     "@oclif/core" "^2.8.5"
@@ -832,7 +832,7 @@
     inquirer "^8.2.5"
     lodash.throttle "^4.1.1"
     log-chopper "^1.0.2"
-    semver "^7.5.0"
+    semver "^7.5.1"
     tar-fs "^2.1.1"
 
 "@oclif/plugin-warn-if-update-available@^2.0.14":
@@ -5353,6 +5353,13 @@ semver@^7.1.1, semver@^7.1.3, semver@^7.2.1, semver@^7.3.2, semver@^7.3.4, semve
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.0.tgz#ed8c5dc8efb6c629c88b23d41dc9bf40c1d96cd0"
   integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
+  dependencies:
+    lru-cache "^6.0.0"
+
+semver@^7.5.1:
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
+  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
   dependencies:
     lru-cache "^6.0.0"
 
