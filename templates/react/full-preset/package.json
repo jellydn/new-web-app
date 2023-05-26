@@ -20,11 +20,11 @@
     "@tanstack/react-query": "4.29.7"
   },
   "devDependencies": {
-    "@babel/core": "7.21.8",
-    "@storybook/addon-actions": "7.0.17",
-    "@storybook/addon-essentials": "7.0.17",
-    "@storybook/addon-links": "7.0.17",
-    "@storybook/react": "7.0.17",
+    "@babel/core": "7.22.1",
+    "@storybook/addon-actions": "7.0.18",
+    "@storybook/addon-essentials": "7.0.18",
+    "@storybook/addon-links": "7.0.18",
+    "@storybook/react": "7.0.18",
     "@trivago/prettier-plugin-sort-imports": "4.1.1",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -42,7 +42,7 @@
     "prettier": "2.8.8",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
-    "vite": "4.3.8"
+    "vite": "4.3.9"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
