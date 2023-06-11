@@ -595,7 +595,7 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
-"@oclif/color@^1.0.4", "@oclif/color@^1.0.5":
+"@oclif/color@^1.0.4", "@oclif/color@^1.0.6":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.6.tgz#1d9a54774de76dec9bd3b40f5fda305567acb2be"
   integrity sha512-U6hABUkwoUoEZ1K5mJ2E7AeJ7udjYP3ZYWq18LLoMyjV+Us9hh3UwAghOY75F9PAzF8q5kvhoGu70LnPASbZ8g==
@@ -810,12 +810,12 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.17":
-  version "3.1.17"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.17.tgz#d566badd88a3bd9bda19611244aa60a0e5fccb72"
-  integrity sha512-G2PdhvKmt3yXRcAb7o8D7PCT3/bImpImphAdaDgrQfCwtYHYd7bsfThCF5hKa+UiSrGTpGLWoDHTkAydXpFJNw==
+"@oclif/plugin-update@3.1.18":
+  version "3.1.18"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.18.tgz#1e8e7c7e339f351b46caea1f6a5601293061e3a0"
+  integrity sha512-wY7wD5PkkLW0EpBR3vFcpBBr9wPhVYQwB8KjOnQSzUbQGjPIvHBnb7ud9bRjk0t9fbGo5IFvNFTIFh8u3KESKg==
   dependencies:
-    "@oclif/color" "^1.0.5"
+    "@oclif/color" "^1.0.6"
     "@oclif/core" "^2.8.5"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
