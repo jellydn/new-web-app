@@ -845,13 +845,13 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.21":
-  version "3.1.21"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.21.tgz#3108ea6f44130814f2988e8d67e10c02c867fe3a"
-  integrity sha512-rqgMHsf0swPoRboNkLAkVp84crvqmwe9twgMN55UEVIjkWEVikY02RNURyYBpnLd5zrE+ymt68GyatQjmf6l+A==
+"@oclif/plugin-update@3.1.22":
+  version "3.1.22"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.22.tgz#f20ec788ed4d4ed0bd341c4b22b9ddf5a19e0751"
+  integrity sha512-cbBATw3kHaJ+HdPaBWW+2feXV1sv3yUCHzasi6vCjV/kV3+hOqIvwPtACCWXjKc/nRh/eEiAoAewmJHbR+SBXQ==
   dependencies:
     "@oclif/color" "^1.0.6"
-    "@oclif/core" "^2.8.7"
+    "@oclif/core" "^2.8.11"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
     filesize "^6.1.0"
