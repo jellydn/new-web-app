@@ -659,7 +659,7 @@
     is-wsl "^2.1.1"
     tslib "^2.5.0"
 
-"@oclif/core@2.9.4":
+"@oclif/core@2.9.4", "@oclif/core@^2.9.4":
   version "2.9.4"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.9.4.tgz#5b22415e238fc3e0db08b0350b85b417ead6e6ff"
   integrity sha512-eFRRpV+tJ6nMkhay2M9IppjSF3atRrgj6Qo83qUslaFSAW3NAl4mIhx1mKmTwQx5rgSrar03xICtSAWJ6gZtag==
@@ -695,7 +695,7 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^2.8.2", "@oclif/core@^2.8.4", "@oclif/core@^2.9.3":
+"@oclif/core@^2.8.2", "@oclif/core@^2.9.3":
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.9.3.tgz#d20478d03b57713e5a6d9582027f97e83e8be496"
   integrity sha512-0KLiVpXCJivAjLoj/LAXQf85MtGzyforyPkgNJQEP6QQugnuq2kHcG+DojWEQYz0sADXT2259EdPibslEThUMg==
@@ -819,24 +819,17 @@
     widest-line "^3.1.0"
     wrap-ansi "^6.2.0"
 
-"@oclif/plugin-help@5.2.14":
+"@oclif/plugin-help@5.2.14", "@oclif/plugin-help@^5.2.14":
   version "5.2.14"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.14.tgz#c89f623712fc7d74f01fd2c9d909434b335a2e7b"
   integrity sha512-7hMLc6zqxeRfG4nvHHQPpbaBj60efM3ULFkCpHZkdLms/ezIkNo40F661QuraIjMP/NN+U6VSfBCGuPkRyxVkA==
   dependencies:
     "@oclif/core" "^2.9.3"
 
-"@oclif/plugin-help@^5.1.19":
-  version "5.2.13"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.13.tgz#101cafdc8a260dcd2f276acef2dcbd224a7fac44"
-  integrity sha512-8+uJ9fxZhb76T+NiHDyLQWmHVhu1ONj+e47w3bMLe3+absfuGsWYZm5+W8ApJxQKoLgB5pW810idO0f7iP/4tw==
-  dependencies:
-    "@oclif/core" "^2.9.3"
-
-"@oclif/plugin-not-found@^2.3.7":
-  version "2.3.31"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-2.3.31.tgz#6ff319d07e46b8e1fa021431fdcda917c1355430"
-  integrity sha512-KHBCDJbDrkFc5vuPxg4JZ3wBTrdPPHOQOWp4bLCV4cnVSUHBKnfCqnCg2aXmRb97nbzY3P13/i8Th3KQjArqmg==
+"@oclif/plugin-not-found@^2.3.32":
+  version "2.3.32"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-2.3.32.tgz#4b9371b028ed6a74238a5ea7c12cfa7d30d7d0a8"
+  integrity sha512-tVFHfR9XRUWrcxBugHjFr7HUmbLheDX05IaFr7fMF2hcvcqDs3DBjy42WKEoXSaBVTcST6KKhoSy2UVX8pk9Fg==
   dependencies:
     "@oclif/color" "^1.0.8"
     "@oclif/core" "^2.9.3"
@@ -877,10 +870,10 @@
     semver "^7.5.4"
     tar-fs "^2.1.1"
 
-"@oclif/plugin-warn-if-update-available@^2.0.14":
-  version "2.0.43"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-warn-if-update-available/-/plugin-warn-if-update-available-2.0.43.tgz#dc645ad390b66e1d6dd66ce51e0c00e657b98771"
-  integrity sha512-8nMnBJxV158bKGStsSqcg9FY1PD+WaNc6Soz74py9aq956i+wJax5xL8+U9J5/UmNixHzhdEzlioyHcUH/7CXQ==
+"@oclif/plugin-warn-if-update-available@^2.0.44":
+  version "2.0.44"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-warn-if-update-available/-/plugin-warn-if-update-available-2.0.44.tgz#1693e5be181fba5ef6cd68ba3653a4209283a011"
+  integrity sha512-52Ww0B4F1tMhwjw2fe73lhmfDI/F4ynf3ur7/xnpnVBEvj5JG4sqolbEJV/0lV85+4dJNsYJRxubbPYjxcbCcA==
   dependencies:
     "@oclif/core" "^2.9.3"
     chalk "^4.1.0"
@@ -4981,15 +4974,15 @@ object.values@^1.1.5, object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-oclif@3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.9.1.tgz#f7ddf8aacd3fd86029b5e66c6cac743459299f4b"
-  integrity sha512-gJ8gJrohFY8qEeVBOw7wgAFdwPt2CTTkEFXDTkfUeXap6URIy6ngP7g/E1A2zFt2I0wH/qQHwcfuTpfBbj1+Uw==
+oclif@3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.9.2.tgz#f48c5446d5034af05f5175c615a97912b932d3b5"
+  integrity sha512-iDauedLM+oHiG/se+68DENKk4+D/k733neOQq4ZXrcsHVoJMmWflejC4iBeeKrm/mVb3pUHsoFij6S7G7Mt60w==
   dependencies:
-    "@oclif/core" "^2.8.4"
-    "@oclif/plugin-help" "^5.1.19"
-    "@oclif/plugin-not-found" "^2.3.7"
-    "@oclif/plugin-warn-if-update-available" "^2.0.14"
+    "@oclif/core" "^2.9.4"
+    "@oclif/plugin-help" "^5.2.14"
+    "@oclif/plugin-not-found" "^2.3.32"
+    "@oclif/plugin-warn-if-update-available" "^2.0.44"
     aws-sdk "^2.1231.0"
     concurrently "^7.6.0"
     debug "^4.3.3"
