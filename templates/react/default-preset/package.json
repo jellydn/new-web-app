@@ -10,10 +10,10 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@tanstack/react-query": "4.29.25"
+    "@tanstack/react-query": "4.32.0"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "4.1.1",
+    "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
     "@typescript-eslint/eslint-plugin": "5.62.0",
@@ -26,7 +26,7 @@
     "lint-staged": "13.2.3",
     "prettier": "2.8.8",
     "typescript": "5.1.6",
-    "vite": "4.4.5"
+    "vite": "4.4.6"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",

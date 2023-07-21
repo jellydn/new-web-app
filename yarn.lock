@@ -1102,10 +1102,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trivago/prettier-plugin-sort-imports@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.1.1.tgz#71c3c1ae770c3738b6fc85710714844477574ffd"
-  integrity sha512-dQ2r2uzNr1x6pJsuh/8x0IRA3CBUB+pWEW3J/7N98axqt7SQSm+2fy0FLNXvXGg77xEDC7KHxJlHfLYyi7PDcw==
+"@trivago/prettier-plugin-sort-imports@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.2.0.tgz#b240366f9e2bda8e14edb18b14ea084e0ec25968"
+  integrity sha512-YBepjbt+ZNBVmN3ev1amQH3lWCmHyt5qTbLCp/syXJRu/Kw2koXh44qayB1gMRxcL/gV8egmjN5xWSrYyfUtyw==
   dependencies:
     "@babel/generator" "7.17.7"
     "@babel/parser" "^7.20.5"
@@ -1219,10 +1219,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.2.tgz#129cc9ae69f93824f92fac653eebfb4812ab4af9"
   integrity sha512-Dd0BYtWgnWJKwO1jkmTrzofjK2QXXcai0dmtzvIBhcA+RsG5h8R3xlyta0kGOZRNfL9GuRtb1knmPEhQrePCEw==
 
-"@types/node@18.16.19":
-  version "18.16.19"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.19.tgz#cb03fca8910fdeb7595b755126a8a78144714eea"
-  integrity sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==
+"@types/node@18.16.20":
+  version "18.16.20"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.20.tgz#b27be1ceb267bfb47d8bac024ff6379998f62207"
+  integrity sha512-nL54VfDjThdP2UXJXZao5wp76CDiDw4zSRO8d4Tk7UgDqNKGKVEQB0/t3ti63NS+YNNkIQDvwEAF04BO+WYu7Q==
 
 "@types/node@^15.6.2":
   version "15.14.9"
@@ -4974,10 +4974,10 @@ object.values@^1.1.5, object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-oclif@3.9.2:
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.9.2.tgz#f48c5446d5034af05f5175c615a97912b932d3b5"
-  integrity sha512-iDauedLM+oHiG/se+68DENKk4+D/k733neOQq4ZXrcsHVoJMmWflejC4iBeeKrm/mVb3pUHsoFij6S7G7Mt60w==
+oclif@3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.10.0.tgz#edfe473d5195603f1a689eb9aefead236c302ae1"
+  integrity sha512-Kf/nL7GrfezePsZGQytbPJG1EGNFRAG+lC6NhYqPOgeBIGppLuQDg6vO9wz0QRoijSJv/Yf4wCe2URMoCFtBNw==
   dependencies:
     "@oclif/core" "^2.9.4"
     "@oclif/plugin-help" "^5.2.14"
