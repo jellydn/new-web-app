@@ -611,6 +611,17 @@
     supports-color "^8.1.1"
     tslib "^2"
 
+"@oclif/color@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.9.tgz#9707f0cd39b3c2eae0eb0c76a90838a594306327"
+  integrity sha512-ntc/fZwuf4NRfYbXVoUNFyMB9IxVx/ls/WbSLKbkD9UpsmwY1I3J4DJKKRFRpenmTuxGQW8Lyzm7X3vhzHpDQA==
+  dependencies:
+    ansi-styles "^4.2.1"
+    chalk "^4.1.0"
+    strip-ansi "^6.0.1"
+    supports-color "^8.1.1"
+    tslib "^2"
+
 "@oclif/command@^1.8.14", "@oclif/command@^1.8.15":
   version "1.8.32"
   resolved "https://registry.yarnpkg.com/@oclif/command/-/command-1.8.32.tgz#27389878812fe7f8668827d9f5fa968cd97056f8"
@@ -852,12 +863,12 @@
     tslib "^2.4.1"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.27":
-  version "3.1.27"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.27.tgz#7454d58b59cf1a6e64fff924bccafcec13680926"
-  integrity sha512-QJZGZ7WZIdE0g1PQ9E/jdfpStAaGI906f59dKWYyVx82vDyYc2hSMdiGiu1KFF6Q0ndR3Az37DSPVp1RPS+lpQ==
+"@oclif/plugin-update@3.1.28":
+  version "3.1.28"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.28.tgz#7ae538bbb446a993c89490da74851aca250bca05"
+  integrity sha512-anP0kt73La0hzz9iqiBcxkXFwf7Mr+vQ+PdVnyKVTsI86yFWROFDmrBf5HSgF1rjvvGashvVGLq6hpKzSFUFJw==
   dependencies:
-    "@oclif/color" "^1.0.8"
+    "@oclif/color" "^1.0.9"
     "@oclif/core" "^2.9.3"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
