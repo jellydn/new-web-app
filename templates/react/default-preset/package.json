@@ -21,7 +21,7 @@
     "@vitejs/plugin-react": "4.0.3",
     "cypress": "12.17.2",
     "eslint": "8.45.0",
-    "eslint-config-productsway": "0.2.0",
+    "eslint-config-productsway": "0.3.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "prettier": "2.8.8",
