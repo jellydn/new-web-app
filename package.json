@@ -108,6 +108,7 @@
     "splitting": false,
     "minify": true,
     "clean": true,
+    "legacyOutput": true,
     "format": [
       "esm",
       "cjs"
