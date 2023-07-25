@@ -15,6 +15,7 @@
   "repository": "jellydn/new-web-app",
   "license": "MIT",
   "author": "Huynh Duc Dung @jellydn",
+  "type": "module",
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -52,10 +53,10 @@
   "dependencies": {
     "@oclif/core": "2.9.4",
     "@oclif/plugin-help": "5.2.14",
-    "@oclif/plugin-plugins": "2.4.7",
+    "@oclif/plugin-plugins": "3.1.8",
     "@oclif/plugin-update": "3.1.28",
     "degit": "2.8.4",
-    "execa": "5.1.1",
+    "execa": "7.1.1",
     "replace-in-file": "7.0.1"
   },
   "devDependencies": {
@@ -64,17 +65,17 @@
     "@swc/helpers": "0.5.1",
     "@trivago/prettier-plugin-sort-imports": "4.2.0",
     "@types/degit": "2.8.3",
-    "@types/node": "18.17.0",
+    "@types/node": "20.4.4",
     "@types/shelljs": "0.8.12",
     "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "6.2.0",
     "eslint": "8.45.0",
-    "eslint-config-productsway": "0.2.0",
+    "eslint-config-productsway": "0.3.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "mocha": "10.2.0",
     "oclif": "3.10.0",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "regenerator-runtime": "0.13.11",
     "shx": "0.3.4",
     "ts-node": "10.9.1",
