@@ -761,10 +761,10 @@
     is-wsl "^2.1.1"
     tslib "^2.6.1"
 
-"@oclif/core@2.11.5", "@oclif/core@^2.11.4":
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.5.tgz#3e278957d605399a0fe7700b26dcab64f6ee4608"
-  integrity sha512-ALv0YyaMwfy+LRGigKoqST/It8uYBwp1+3F4OpwmPpQl7BiRCGbOBnJSrWNNCAEMZiYpWNgF/3WQVB5VUQlYbQ==
+"@oclif/core@2.11.6":
+  version "2.11.6"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.6.tgz#38f6b9cba33fc922b0c53cf15e981027ac710a22"
+  integrity sha512-i5LXd+VCjoidlVWD1AF9ZWP7S3iP5WoeUNYXnJGoBeZcgqaAYVdONkBoIann0zFpdImuxNrkdHYnAhfLlPvdzQ==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -801,6 +801,42 @@
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.1.tgz#69c3cfd3d9b2df9fe94c6d16a3c5da59706f078a"
   integrity sha512-/DHDtm/PoSNvWdJtTv1GUYnrCrlTsEQd1CsXKNfMSylpkeOjbDIbt1w4NYZ50BfAWxpCunf7RmbwxFBpDa5lHQ==
+  dependencies:
+    "@types/cli-progress" "^3.11.0"
+    ansi-escapes "^4.3.2"
+    ansi-styles "^4.3.0"
+    cardinal "^2.1.1"
+    chalk "^4.1.2"
+    clean-stack "^3.0.1"
+    cli-progress "^3.12.0"
+    debug "^4.3.4"
+    ejs "^3.1.8"
+    fs-extra "^9.1.0"
+    get-package-type "^0.1.0"
+    globby "^11.1.0"
+    hyperlinker "^1.0.0"
+    indent-string "^4.0.0"
+    is-wsl "^2.2.0"
+    js-yaml "^3.14.1"
+    natural-orderby "^2.0.3"
+    object-treeify "^1.1.33"
+    password-prompt "^1.1.2"
+    semver "^7.5.3"
+    slice-ansi "^4.0.0"
+    string-width "^4.2.3"
+    strip-ansi "^6.0.1"
+    supports-color "^8.1.1"
+    supports-hyperlinks "^2.2.0"
+    ts-node "^10.9.1"
+    tslib "^2.5.0"
+    widest-line "^3.1.0"
+    wordwrap "^1.0.0"
+    wrap-ansi "^7.0.0"
+
+"@oclif/core@^2.11.4":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.5.tgz#3e278957d605399a0fe7700b26dcab64f6ee4608"
+  integrity sha512-ALv0YyaMwfy+LRGigKoqST/It8uYBwp1+3F4OpwmPpQl7BiRCGbOBnJSrWNNCAEMZiYpWNgF/3WQVB5VUQlYbQ==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -6759,10 +6795,10 @@ tslib@2.6.1, tslib@^2, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1, t
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
   integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
 
-tsup@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-7.1.0.tgz#11369762b68032da118a714a38d5a1d26ac45293"
-  integrity sha512-mazl/GRAk70j8S43/AbSYXGgvRP54oQeX8Un4iZxzATHt0roW0t6HYDVZIXMw0ZQIpvr1nFMniIVnN5186lW7w==
+tsup@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-7.2.0.tgz#bb24c0d5e436477900c712e42adc67200607303c"
+  integrity sha512-vDHlczXbgUvY3rWvqFEbSqmC1L7woozbzngMqTtL2PGBODTtWlRwGDDawhvWzr5c1QjKe4OAKqJGfE1xeXUvtQ==
   dependencies:
     bundle-require "^4.0.0"
     cac "^6.7.12"
