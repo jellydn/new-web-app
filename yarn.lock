@@ -761,10 +761,10 @@
     is-wsl "^2.1.1"
     tslib "^2.6.1"
 
-"@oclif/core@2.11.6":
-  version "2.11.6"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.6.tgz#38f6b9cba33fc922b0c53cf15e981027ac710a22"
-  integrity sha512-i5LXd+VCjoidlVWD1AF9ZWP7S3iP5WoeUNYXnJGoBeZcgqaAYVdONkBoIann0zFpdImuxNrkdHYnAhfLlPvdzQ==
+"@oclif/core@2.11.7":
+  version "2.11.7"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.7.tgz#7781a4dc65597ed9d8fda39cb1b209efca1c2d24"
+  integrity sha512-0jbHePVekndUTd+Wee0+pnCpRhuHJrKiG9OtMqf4JSBCxp5Q8V+ACf8QKN4gNH9ppbGORfnTIYtXWh60+DcIiw==
   dependencies:
     "@types/cli-progress" "^3.11.0"
     ansi-escapes "^4.3.2"
@@ -1367,10 +1367,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.5.tgz#9dc0a5cb1ccce4f7a731660935ab70b9c00a5d69"
   integrity sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==
 
-"@types/node@18.17.1":
-  version "18.17.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.1.tgz#84c32903bf3a09f7878c391d31ff08f6fe7d8335"
-  integrity sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==
+"@types/node@18.17.2":
+  version "18.17.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.2.tgz#95b4df6c724e146ef932043a1fb6b8f80975e461"
+  integrity sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==
 
 "@types/node@^15.6.2":
   version "15.14.9"
@@ -5739,10 +5739,10 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.0.tgz#e7b19f691245a21d618c68bc54dc06122f6105ae"
-  integrity sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==
+prettier@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.1.tgz#65271fc9320ce4913c57747a70ce635b30beaa40"
+  integrity sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
