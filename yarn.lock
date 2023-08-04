@@ -5383,10 +5383,10 @@ object.values@^1.1.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-oclif@3.11.1:
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.11.1.tgz#6e20d5ca30760490d910e1ae35af63d0391cbfbb"
-  integrity sha512-n6qDc0ZI9wgE4fQJ9UNhjO5tagYaRel1Kt3iw2lCJQzd+QNrdA1nChcvHTYQJ+a92zZIF9RvC1P2g6zHo5uyjQ==
+oclif@3.11.2:
+  version "3.11.2"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.11.2.tgz#ecc78bc04b5b50a53d91673cbfd47a9bebe186d8"
+  integrity sha512-y2pEJlSu4gCmSFZFKvgrMYIcDym5zzNErqQ5T2x/UlFy6xZiDhkrsxRteR6WgdlagONkFZg+Akti5qTn/wZwAg==
   dependencies:
     "@oclif/core" "^2.11.4"
     "@oclif/plugin-help" "^5.2.14"
