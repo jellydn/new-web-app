@@ -761,7 +761,7 @@
     is-wsl "^2.1.1"
     tslib "^2.6.1"
 
-"@oclif/core@2.11.7":
+"@oclif/core@2.11.7", "@oclif/core@^2.11.7":
   version "2.11.7"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.7.tgz#7781a4dc65597ed9d8fda39cb1b209efca1c2d24"
   integrity sha512-0jbHePVekndUTd+Wee0+pnCpRhuHJrKiG9OtMqf4JSBCxp5Q8V+ACf8QKN4gNH9ppbGORfnTIYtXWh60+DcIiw==
@@ -957,7 +957,14 @@
     widest-line "^3.1.0"
     wrap-ansi "^6.2.0"
 
-"@oclif/plugin-help@5.2.15", "@oclif/plugin-help@^5.2.14":
+"@oclif/plugin-help@5.2.16":
+  version "5.2.16"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.16.tgz#bcb8ae96d3023ed3dfbbe38eba9f50f987caab4a"
+  integrity sha512-MHtNpV1xBHSPcNAzUggQXwrBJUDoz8b01SnVFxFEmOHT3iYhvSir8DD0JSU+lhkyq1bNhF/lkaQJ9FtSuvwiyA==
+  dependencies:
+    "@oclif/core" "^2.11.7"
+
+"@oclif/plugin-help@^5.2.14":
   version "5.2.15"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.15.tgz#3880e02689db948a868d2a6ce413fa667f189a2e"
   integrity sha512-q3gC4kIRlTilA8sG/9Eq2BEW2wo2KWV0ZbQ+8i3uQCvrgY4qoCIp5JTfsbbKR5XWaqPDdZPWhWuS1Rveu5V4FA==
@@ -973,10 +980,10 @@
     "@oclif/core" "^2.9.4"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@3.1.8":
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.1.8.tgz#92ebebda1dd01d40e8f85c488bde3495999721a3"
-  integrity sha512-514sFBzLcR9QCSMWCHt/1XntfjJEZvb637b9YuV4kwq749pKEPF7fjCxSV1gYQCCP4TjMB5gB4AwPL4cCbe+/A==
+"@oclif/plugin-plugins@3.1.10":
+  version "3.1.10"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.1.10.tgz#3282212e2e5d9f7813d26fd1fab73c81dd887620"
+  integrity sha512-hDBGarSnmDZUzp/Vqz5bsykkG3EYVSoCQ9Ld55bREw6IO8jchFjRKhFD1LH28kqmYp66qU8OuEyFWPbpOR9XJw==
   dependencies:
     "@oclif/color" "^1.0.4"
     "@oclif/core" "^2.8.7"
@@ -987,9 +994,9 @@
     load-json-file "^5.3.0"
     npm "^9.7.2"
     npm-run-path "^4.0.1"
-    semver "^7.5.3"
+    semver "^7.5.4"
     shelljs "^0.8.5"
-    tslib "^2.6.0"
+    tslib "^2.6.1"
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
@@ -1367,10 +1374,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.4.5.tgz#9dc0a5cb1ccce4f7a731660935ab70b9c00a5d69"
   integrity sha512-rt40Nk13II9JwQBdeYqmbn2Q6IVTA5uPhvSO+JVqdXw/6/4glI6oR9ezty/A9Hg5u7JH4OmYmuQ+XvjKm0Datg==
 
-"@types/node@18.17.2":
-  version "18.17.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.2.tgz#95b4df6c724e146ef932043a1fb6b8f80975e461"
-  integrity sha512-wBo3KqP/PBqje5TI9UTiuL3yWfP6sdPtjtygSOqcYZWT232dfDeDOnkDps5wqZBP9NgGgYrNejinl0faAuE+HQ==
+"@types/node@18.17.3":
+  version "18.17.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.3.tgz#409febdc84478b452306a8112c692e800ad9f6fe"
+  integrity sha512-2x8HWtFk0S99zqVQABU9wTpr8wPoaDHZUcAkoTKH+nL7kPv3WUI9cRi/Kk5Mz4xdqXSqTkKP7IWNoQQYCnDsTA==
 
 "@types/node@^15.6.2":
   version "15.14.9"
@@ -6790,7 +6797,7 @@ tsconfig-paths@^3.14.1:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@2.6.1, tslib@^2, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1, tslib@^2.4.0, tslib@^2.5.0, tslib@^2.6.0, tslib@^2.6.1:
+tslib@2.6.1, tslib@^2, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1, tslib@^2.4.0, tslib@^2.5.0, tslib@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
   integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
