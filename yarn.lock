@@ -702,7 +702,7 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
-"@oclif/color@^1.0.4", "@oclif/color@^1.0.9":
+"@oclif/color@^1.0.10", "@oclif/color@^1.0.4", "@oclif/color@^1.0.9":
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.10.tgz#e83e3a30fffc93076281398cbeaa4f761c4df09e"
   integrity sha512-INWEDAL3SzzR3pIhkrqk22HV6JravLUeRZXAIpoQqIeLReauaibCVcNTzOlt0z0S8YrqRhksc54ZxZC4Oa8xBw==
@@ -797,7 +797,7 @@
     wordwrap "^1.0.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^2.11.1", "@oclif/core@^2.8.7", "@oclif/core@^2.9.3", "@oclif/core@^2.9.4":
+"@oclif/core@^2.11.1", "@oclif/core@^2.8.7", "@oclif/core@^2.9.4":
   version "2.11.1"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-2.11.1.tgz#69c3cfd3d9b2df9fe94c6d16a3c5da59706f078a"
   integrity sha512-/DHDtm/PoSNvWdJtTv1GUYnrCrlTsEQd1CsXKNfMSylpkeOjbDIbt1w4NYZ50BfAWxpCunf7RmbwxFBpDa5lHQ==
@@ -1000,13 +1000,13 @@
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.28":
-  version "3.1.28"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.28.tgz#7ae538bbb446a993c89490da74851aca250bca05"
-  integrity sha512-anP0kt73La0hzz9iqiBcxkXFwf7Mr+vQ+PdVnyKVTsI86yFWROFDmrBf5HSgF1rjvvGashvVGLq6hpKzSFUFJw==
+"@oclif/plugin-update@3.1.30":
+  version "3.1.30"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.30.tgz#bbc9e02995a35e113d10d77fe279f8aabb5c978c"
+  integrity sha512-x8EKvKcfCbh8+rZkZT0AFOUrSkPqkmbS3Bz434nfDLUmOiGh5zPajvvPhb10uod78G5j9nCoSVsc1d+MRiU/Xw==
   dependencies:
-    "@oclif/color" "^1.0.9"
-    "@oclif/core" "^2.9.3"
+    "@oclif/color" "^1.0.10"
+    "@oclif/core" "^2.11.7"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
     filesize "^6.1.0"
