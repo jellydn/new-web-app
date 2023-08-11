@@ -61,19 +61,21 @@ npm install -g new-web-app
 
 <!-- commands -->
 
-- [`new-web-app help [COMMAND]`](#new-web-app-help-command)
+- [`new-web-app help [COMMANDS]`](#new-web-app-help-commands)
+- [`new-web-app react`](#new-web-app-react)
+- [`new-web-app react upgrade-react-18`](#new-web-app-react-upgrade-react-18)
 - [`new-web-app update [CHANNEL]`](#new-web-app-update-channel)
 
-## `new-web-app help [COMMAND]`
+## `new-web-app help [COMMANDS]`
 
 Display help for new-web-app.
 
 ```
 USAGE
-  $ new-web-app help [COMMAND] [-n]
+  $ new-web-app help [COMMANDS] [-n]
 
 ARGUMENTS
-  COMMAND  Command to show help for.
+  COMMANDS  Command to show help for.
 
 FLAGS
   -n, --nested-commands  Include all nested commands in the output.
@@ -82,7 +84,61 @@ DESCRIPTION
   Display help for new-web-app.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.16/src/commands/help.ts)_
+
+## `new-web-app react`
+
+React App Generator
+
+```
+USAGE
+  $ new-web-app react [-v] [-h] [-n <value>] [-t yes|no] [-s yes|no] [-a yes|no] [-q yes|no] [-f yes|no]
+    [-c yes|no]
+
+FLAGS
+  -a, --airbnb=<option>           add ESLint, Prettier with Airbnb style (Typescript)
+                                  <options: yes|no>
+  -c, --cypress=<option>          add cypress
+                                  <options: yes|no>
+  -f, --react-hook-form=<option>  add react-hook-form
+                                  <options: yes|no>
+  -h, --help                      Show CLI help.
+  -n, --name=<value>              folder name to create
+  -q, --react-query=<option>      add react-query
+                                  <options: yes|no>
+  -s, --storybook=<option>        add storybook
+                                  <options: yes|no>
+  -t, --tailwind=<option>         add tailwind css
+                                  <options: yes|no>
+  -v, --version                   Show CLI version.
+
+DESCRIPTION
+  React App Generator
+
+EXAMPLES
+  $ npx new-web-app@latest react -n=react-app -a=yes -q=yes
+
+  $ npx new-web-app@latest react --name=react-app --airbnb=yes --react-query=yes
+```
+
+_See code: [dist/commands/react/index.ts](https://github.com/jellydn/new-web-app/blob/v0.3.6/dist/commands/react/index.ts)_
+
+## `new-web-app react upgrade-react-18`
+
+Upgrade to React 18
+
+```
+USAGE
+  $ new-web-app react upgrade-react-18 [-d <value>]
+
+FLAGS
+  -d, --directory=<value>  folder name to update
+
+DESCRIPTION
+  Upgrade to React 18
+```
+
+_See code: [dist/commands/react/upgrade-react-18.ts](https://github.com/jellydn/new-web-app/blob/v0.3.6/dist/commands/react/upgrade-react-18.ts)_
 
 ## `new-web-app update [CHANNEL]`
 
@@ -119,7 +175,7 @@ EXAMPLES
     $ new-web-app update --available
 ```
 
-_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v3.0.0/src/commands/update.ts)_
+_See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v3.1.30/src/commands/update.ts)_
 
 <!-- commandsstop -->
 
