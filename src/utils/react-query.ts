@@ -24,21 +24,12 @@ class ReactQueryApp extends Command {
 
     replaceInFileSync({
       files: [`${name}/src/App.tsx`],
-      from: "import React, { useState } from 'react'",
-      to: `import React, { useState } from 'react'
-      import {
-        QueryClient,
-        QueryClientProvider,
-      } from 'react-query'
-      import { ReactQueryDevtools } from 'react-query/devtools'`,
-    });
-
-    replaceInFileSync({
-      files: [`${name}/src/App.tsx`],
-      from: "import './App.css'",
-      to: `import './App.css'
+      from: "function App()",
+      to: `import { QueryClient, QueryClientProvider } from "react-query";
+import { ReactQueryDevtools } from "react-query/devtools";
 
       const queryClient = new QueryClient()
+function App()
       `,
     });
     replaceInFileSync({
