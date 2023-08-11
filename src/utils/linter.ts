@@ -1,5 +1,6 @@
 import { Command, Flags, ux } from "@oclif/core";
-import { writeFileSync } from "fs";
+import { existsSync, writeFileSync } from "fs";
+import { join } from "path";
 
 import { execaCommandSync } from "../exca";
 
@@ -38,13 +39,17 @@ class LinterApp extends Command {
     };`;
     writeFileSync(`${name}/.eslintrc.cjs`, linter);
 
-    const prettier = `module.exports = {
+    // Only create prettier config if it doesn't exist
+    // This is to prevent overriding user's custom config
+    if (!existsSync(join(name, ".prettierrc"))) {
+      const prettier = `{
       "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
       "importOrderSeparation": true,
       "importOrderSortSpecifiers": true,
       "plugins": ["@trivago/prettier-plugin-sort-imports"]
-    };`;
-    writeFileSync(`${name}/.prettierrc.cjs`, prettier);
+    }`;
+      writeFileSync(`${name}/.prettierrc`, prettier);
+    }
 
     await execaCommandSync(
       `cd ${name} && npx husky-init && npx mrm@2 lint-staged`,
