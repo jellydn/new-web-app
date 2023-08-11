@@ -13,11 +13,10 @@
 [![Intro New-Web-App CLI](https://img.youtube.com/vi/fflgltdSpW8/0.jpg)](https://www.youtube.com/watch?v=fflgltdSpW8)
 
 <!-- toc -->
-
-- [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
-- [Install globally with yarn](#install-globally-with-yarn)
-- [Or install globally with npm](#or-install-globally-with-npm)
-- [Commands](#commands)
+* [Welcome to new-web-app 👋](#welcome-to-new-web-app-)
+* [Install globally with yarn](#install-globally-with-yarn)
+* [Or install globally with npm](#or-install-globally-with-npm)
+* [Commands](#commands)
 <!-- tocstop -->
 
 ## Prerequisites
@@ -60,11 +59,10 @@ npm install -g new-web-app
 # Commands
 
 <!-- commands -->
-
-- [`new-web-app help [COMMANDS]`](#new-web-app-help-commands)
-- [`new-web-app react`](#new-web-app-react)
-- [`new-web-app react upgrade-react-18`](#new-web-app-react-upgrade-react-18)
-- [`new-web-app update [CHANNEL]`](#new-web-app-update-channel)
+* [`new-web-app help [COMMANDS]`](#new-web-app-help-commands)
+* [`new-web-app react`](#new-web-app-react)
+* [`new-web-app react upgrade-react-18`](#new-web-app-react-upgrade-react-18)
+* [`new-web-app update [CHANNEL]`](#new-web-app-update-channel)
 
 ## `new-web-app help [COMMANDS]`
 
@@ -176,7 +174,6 @@ EXAMPLES
 ```
 
 _See code: [@oclif/plugin-update](https://github.com/oclif/plugin-update/blob/v3.1.30/src/commands/update.ts)_
-
 <!-- commandsstop -->
 
 ## Demo
