@@ -3,6 +3,7 @@ import { existsSync, writeFileSync } from "fs";
 import { join } from "path";
 
 import { execaCommandSync } from "../exca";
+import { replaceInFileSync } from "replace-in-file";
 
 // https://github.com/jellydn/eslint-config-productsway
 class LinterApp extends Command {
@@ -37,7 +38,23 @@ class LinterApp extends Command {
         "import/no-extraneous-dependencies": 0
       }
     };`;
-    writeFileSync(`${name}/.eslintrc.cjs`, linter);
+
+    if (existsSync(join(name, ".eslintrc.cjs"))) {
+      // Replace the content
+      replaceInFileSync({
+        files: [`./${name}/.eslintrc.cjs`],
+        from: `extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+  ],`,
+        to: `extends: [
+    'productsway/react',
+  ],`,
+      });
+    } else {
+      writeFileSync(`${name}/.eslintrc.cjs`, linter);
+    }
 
     // Only create prettier config if it doesn't exist
     // This is to prevent overriding user's custom config
