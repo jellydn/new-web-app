@@ -23,7 +23,7 @@ class LinterApp extends Command {
     ux.action.start(LinterApp.description);
 
     await execaCommandSync(
-      `cd ${name} && yarn remove eslint-plugin-react-hooks eslint-plugin-react-refresh && yarn add -D typescript eslint prettier @trivago/prettier-plugin-sort-imports eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`,
+      `cd ${name} && yarn remove eslint-plugin-react-hooks && yarn add -D typescript eslint prettier @trivago/prettier-plugin-sort-imports eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`,
     );
 
     const linter = `module.exports = {
