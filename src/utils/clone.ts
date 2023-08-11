@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import degit from "degit";
 import { existsSync, renameSync, writeFileSync } from "fs";
 import { join } from "path";
@@ -22,7 +21,7 @@ class CloneApp extends Command {
     const { flags } = await this.parse(CloneApp);
     const name = flags.name ?? "vite-react-ts-app";
 
-    CliUx.ux.action.start(CloneApp.description);
+    ux.action.start(CloneApp.description);
     const d = degit("vitejs/vite/packages/create-vite/template-react-ts");
     await d.clone(name);
 
@@ -32,13 +31,13 @@ class CloneApp extends Command {
       to: `"name": "${name}",`,
     });
 
-    CliUx.ux.action.start("Install with prettier code");
-    // only call git init if that is not in git directory
-    const isGitDirectory = await isInGitRepository();
+    ux.action.start("Install with prettier code");
+    // Only call git init if that is not in git directory
+    const isGitDirectory = isInGitRepository();
     if (!isGitDirectory) await execaCommandSync(`cd ${name} && git init`);
 
     await execaCommandSync(
-      `cd ${name} && yarn add -D prettier @trivago/prettier-plugin-sort-imports`
+      `cd ${name} && yarn add -D prettier @trivago/prettier-plugin-sort-imports`,
     );
     if (existsSync(join(name, "_gitignore"))) {
       renameSync(join(name, "_gitignore"), join(name, ".gitignore"));
@@ -58,7 +57,7 @@ class CloneApp extends Command {
       "importOrderSortSpecifiers": true
     }`;
     writeFileSync(`${name}/.prettierrc`, prettier);
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

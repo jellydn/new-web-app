@@ -1,16 +1,15 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, ux, Flags } from "@oclif/core";
 
 import { execaCommandSync } from "../../exca";
 import { getPkgClient } from "../../helpers/get-pkg-client";
-import AirbnbApp from "../../utils/airbnb.js";
+import LinterApp from "../../utils/linter.js";
 import CloneApp from "../../utils/clone.js";
 import CypressApp from "../../utils/cypress.js";
 import PresetApp from "../../utils/preset.js";
-import ReactHookFormApp from "../../utils/react-hook-form.js";
-import ReactQueryApp from "../../utils/react-query.js";
-import StorybookApp from "../../utils/storybook.js";
-import TailwindApp from "../../utils/tailwind.js";
+import ReactHookFormApp from "../../utils/react-hook-form";
+import ReactQueryApp from "../../utils/react-query";
+import StorybookApp from "../../utils/storybook";
+import TailwindApp from "../../utils/tailwind";
 
 export default class ReactCommand extends Command {
   static description = "React App Generator";
@@ -71,13 +70,13 @@ export default class ReactCommand extends Command {
       cypress,
     } = await this.parseInputs();
 
-    // install yarn if not exists
+    // Install yarn if not exists
     const pkgClient = getPkgClient();
     if (pkgClient !== "yarn") {
       await execaCommandSync("npm install --global yarn");
     }
 
-    // optimize speed by use preset template
+    // Optimize speed by use preset template
     if (
       tailwind === "yes" &&
       airbnb === "yes" &&
@@ -126,7 +125,7 @@ export default class ReactCommand extends Command {
     }
 
     if (airbnb === "yes") {
-      await AirbnbApp.run(["--name", name]);
+      await LinterApp.run(["--name", name]);
     }
 
     if (reactQuery === "yes") {
@@ -175,71 +174,63 @@ Happy hacking!`);
       cypress = "no",
     } = flags;
     if (!flags.name) {
-      name = await CliUx.ux.prompt("What is your project name?", {
+      name = await ux.prompt("What is your project name?", {
         type: "normal",
         default: "vite-react-ts-app",
       });
 
       if (!flags.airbnb) {
-        airbnb = await CliUx.ux.prompt(
+        airbnb = await ux.prompt(
           "Do you want to add ESLint, Prettier with Airbnb style? (yes/no)",
           {
             type: "normal",
             default: "yes",
-          }
+          },
         );
       }
 
       if (!flags["react-query"]) {
-        reactQuery = await CliUx.ux.prompt(
+        reactQuery = await ux.prompt(
           "Do you want to add react-query for data fetching? (yes/no)",
           {
             type: "normal",
             default: "yes",
-          }
+          },
         );
       }
 
       if (!flags.storybook) {
-        storybook = await CliUx.ux.prompt(
-          "Do you want to add storybook? (yes/no)",
-          {
-            type: "normal",
-            default: "no",
-          }
-        );
+        storybook = await ux.prompt("Do you want to add storybook? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
       }
 
       if (!flags.tailwind) {
-        tailwind = await CliUx.ux.prompt(
-          "Do you want to add TailwindCSS? (yes/no)",
-          {
-            type: "normal",
-            default: "no",
-          }
-        );
+        tailwind = await ux.prompt("Do you want to add TailwindCSS? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
       }
 
       if (!flags["react-hook-form"]) {
-        reactHookForm = await CliUx.ux.prompt(
+        reactHookForm = await ux.prompt(
           "Do you want to add react-hook-form? (yes/no)",
           {
             type: "normal",
             default: "no",
-          }
+          },
         );
       }
 
       if (!flags.cypress) {
-        cypress = await CliUx.ux.prompt(
-          "Do you want to add cypress? (yes/no)",
-          {
-            type: "normal",
-            default: "no",
-          }
-        );
+        cypress = await ux.prompt("Do you want to add cypress? (yes/no)", {
+          type: "normal",
+          default: "no",
+        });
       }
     }
+
     return {
       name,
       airbnb,

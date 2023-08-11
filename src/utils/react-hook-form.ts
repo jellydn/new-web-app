@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import { replaceInFileSync } from "replace-in-file";
 
 import { execaCommandSync } from "../exca";
@@ -19,12 +18,12 @@ class ReactHookFormApp extends Command {
   async run(): Promise<void> {
     const { flags } = await this.parse(ReactHookFormApp);
     const name = flags.name ?? "vite-react-ts-app";
-    CliUx.ux.action.start(ReactHookFormApp.description);
+    ux.action.start(ReactHookFormApp.description);
     await execaCommandSync(
-      `cd ${name} && yarn add react-hook-form @hookform/devtools`
+      `cd ${name} && yarn add react-hook-form @hookform/devtools`,
     );
 
-    CliUx.ux.action.start("Add react-hook-form example");
+    ux.action.start("Add react-hook-form example");
     replaceInFileSync({
       files: [`${name}/src/App.tsx`],
       from: "import './App.css'",
@@ -76,7 +75,7 @@ class ReactHookFormApp extends Command {
       `,
     });
 
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

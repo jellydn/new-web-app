@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 
 import { execaCommandSync } from "../../exca";
 import { getPkgClient } from "../../helpers/get-pkg-client";
@@ -16,7 +15,7 @@ class UpgradeReact18App extends Command {
   };
 
   async run(): Promise<void> {
-    CliUx.ux.action.start(UpgradeReact18App.description);
+    ux.action.start(UpgradeReact18App.description);
     const { flags } = await this.parse(UpgradeReact18App);
     const directory = flags.directory ?? ".";
 
@@ -24,7 +23,7 @@ class UpgradeReact18App extends Command {
       await execaCommandSync(`cd ${directory}`);
     }
 
-    // install yarn if not exists
+    // Install yarn if not exists
     const pkgClient = getPkgClient();
     if (pkgClient !== "yarn") {
       await execaCommandSync("npm install --global yarn");
@@ -46,7 +45,7 @@ class UpgradeReact18App extends Command {
     root.render(<App tab="home" />);
 
     Happy hacking!`);
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

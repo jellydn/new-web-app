@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 
 import { execaCommandSync } from "../exca";
 
@@ -18,11 +17,11 @@ class StorybookApp extends Command {
   async run(): Promise<void> {
     const { flags } = await this.parse(StorybookApp);
     const name = flags.name ?? "vite-react-ts-app";
-    CliUx.ux.action.start(StorybookApp.description);
+    ux.action.start(StorybookApp.description);
 
     await execaCommandSync(`cd ${name} && npx sb init`);
 
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

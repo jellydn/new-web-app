@@ -5,5 +5,6 @@ export function isInGitRepository(): boolean {
     execSync("git rev-parse --is-inside-work-tree", { stdio: "ignore" });
     return true;
   } catch {}
+
   return false;
 }

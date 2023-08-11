@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import { writeFileSync } from "fs";
 import { replaceInFileSync } from "replace-in-file";
 
@@ -19,16 +18,14 @@ class TailwindApp extends Command {
   async run(): Promise<void> {
     const { flags } = await this.parse(TailwindApp);
     const name = flags.name ?? "vite-react-ts-app";
-    CliUx.ux.action.start(TailwindApp.description);
+    ux.action.start(TailwindApp.description);
 
-    CliUx.ux.action.start("Setting up Tailwind CSS");
+    ux.action.start("Setting up Tailwind CSS");
     await execaCommandSync(
-      `cd ${name} && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p`
+      `cd ${name} && yarn add -D tailwindcss@latest postcss@latest autoprefixer@latest && npx tailwindcss init -p`,
     );
 
-    CliUx.ux.action.start(
-      "Configure Tailwind to remove unused styles in production"
-    );
+    ux.action.start("Configure Tailwind to remove unused styles in production");
     replaceInFileSync({
       files: [`${name}/tailwind.config.cjs`],
       from: "content: [],",
@@ -40,7 +37,7 @@ class TailwindApp extends Command {
 @tailwind utilities;`;
     writeFileSync(`${name}/src/index.css`, styles);
 
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

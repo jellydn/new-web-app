@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import { replaceInFileSync } from "replace-in-file";
 
 import { execaCommandSync } from "../exca";
@@ -19,7 +18,7 @@ class ReactQueryApp extends Command {
   async run(): Promise<void> {
     const { flags } = await this.parse(ReactQueryApp);
     const name = flags.name ?? "vite-react-ts-app";
-    CliUx.ux.action.start(ReactQueryApp.description);
+    ux.action.start(ReactQueryApp.description);
 
     await execaCommandSync(`cd ${name} && yarn add react-query`);
 
@@ -53,7 +52,7 @@ class ReactQueryApp extends Command {
       )`,
     });
 
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

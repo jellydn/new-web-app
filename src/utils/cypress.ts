@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 
 import { execaCommandSync } from "../exca";
 
@@ -18,11 +17,11 @@ class AirbnbApp extends Command {
   async run(): Promise<void> {
     const { flags } = await this.parse(AirbnbApp);
     const name = flags.name ?? "vite-react-ts-app";
-    CliUx.ux.action.start(AirbnbApp.description);
+    ux.action.start(AirbnbApp.description);
 
     await execaCommandSync(`cd ${name} && yarn add cypress --dev`);
 
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 

@@ -1,5 +1,4 @@
-import { Command, Flags } from "@oclif/core";
-import { CliUx } from "@oclif/core";
+import { Command, Flags, ux } from "@oclif/core";
 import degit from "degit";
 
 import { execaCommandSync } from "../exca";
@@ -24,19 +23,19 @@ class PresetApp extends Command {
     const { flags } = await this.parse(PresetApp);
     const name = flags.name ?? "vite-react-ts-app";
 
-    CliUx.ux.action.start(PresetApp.description);
+    ux.action.start(PresetApp.description);
     const d = degit(
-      `jellydn/new-web-app/templates/react/${flags.preset}-preset`
+      `jellydn/new-web-app/templates/react/${flags.preset}-preset`,
     );
     await d.clone(name);
 
-    CliUx.ux.action.start("Install");
-    // only call git init if that is not in git directory
-    const isGitDirectory = await isInGitRepository();
+    ux.action.start("Install");
+    // Only call git init if that is not in git directory
+    const isGitDirectory = isInGitRepository();
     if (!isGitDirectory) await execaCommandSync(`cd ${name} && git init`);
 
     await execaCommandSync(`cd ${name} && yarn install`);
-    CliUx.ux.action.stop();
+    ux.action.stop();
   }
 }
 
