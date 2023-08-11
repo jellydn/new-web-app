@@ -96,7 +96,7 @@ USAGE
     [-c yes|no]
 
 FLAGS
-  -a, --airbnb=<option>           add ESLint, Prettier with Airbnb style (Typescript)
+  -a, --linter=<option>           add ESLint, Prettier with sort imports plugin
                                   <options: yes|no>
   -c, --cypress=<option>          add cypress
                                   <options: yes|no>

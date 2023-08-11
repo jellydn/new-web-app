@@ -1,5 +1,5 @@
 {
-  "version": "0.3.6",
+  "version": "0.4.0",
   "commands": {
     "react": {
       "id": "react",
@@ -57,11 +57,11 @@
             "no"
           ]
         },
-        "airbnb": {
-          "name": "airbnb",
+        "linter": {
+          "name": "linter",
           "type": "option",
           "char": "a",
-          "description": "add ESLint, Prettier with Airbnb style (Typescript)",
+          "description": "add ESLint, Prettier with sort imports plugin",
           "multiple": false,
           "options": [
             "yes",
