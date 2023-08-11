@@ -31,10 +31,10 @@ export default class ReactCommand extends Command {
       options: ["yes", "no"],
       description: "add storybook",
     }),
-    airbnb: Flags.string({
+    linter: Flags.string({
       char: "a",
       options: ["yes", "no"],
-      description: "add ESLint, Prettier with Airbnb style (Typescript)",
+      description: "add ESLint, Prettier with sort imports plugin",
     }),
     "react-query": Flags.string({
       char: "q",
@@ -58,11 +58,10 @@ export default class ReactCommand extends Command {
     "$ npx new-web-app@latest react --name=react-app --airbnb=yes --react-query=yes",
   ];
 
-  // TODO: detect yarn/npm
   async run(): Promise<void> {
     const {
       name,
-      airbnb,
+      linter,
       reactQuery,
       storybook,
       tailwind,
@@ -79,7 +78,7 @@ export default class ReactCommand extends Command {
     // Optimize speed by use preset template
     if (
       tailwind === "yes" &&
-      airbnb === "yes" &&
+      linter === "yes" &&
       reactHookForm === "yes" &&
       reactQuery === "yes" &&
       storybook === "yes" &&
@@ -92,7 +91,7 @@ export default class ReactCommand extends Command {
 
     if (
       tailwind === "no" &&
-      airbnb === "yes" &&
+      linter === "yes" &&
       reactHookForm === "no" &&
       reactQuery === "yes" &&
       storybook === "no"
@@ -104,7 +103,7 @@ export default class ReactCommand extends Command {
 
     if (
       tailwind === "no" &&
-      airbnb === "yes" &&
+      linter === "yes" &&
       reactHookForm === "no" &&
       reactQuery === "no" &&
       storybook === "no"
@@ -124,7 +123,7 @@ export default class ReactCommand extends Command {
       await StorybookApp.run(["--name", name]);
     }
 
-    if (airbnb === "yes") {
+    if (linter === "yes") {
       await LinterApp.run(["--name", name]);
     }
 
@@ -166,7 +165,7 @@ Happy hacking!`);
     const { flags } = await this.parse(ReactCommand);
     let {
       name = "vite-react-ts-app",
-      airbnb = "no",
+      linter = "no",
       "react-query": reactQuery = "no",
       storybook = "no",
       tailwind = "no",
@@ -179,9 +178,9 @@ Happy hacking!`);
         default: "vite-react-ts-app",
       });
 
-      if (!flags.airbnb) {
-        airbnb = await ux.prompt(
-          "Do you want to add ESLint, Prettier with Airbnb style? (yes/no)",
+      if (!flags.linter) {
+        linter = await ux.prompt(
+          "Do you want to add ESLint, Prettier with linter style? (yes/no)",
           {
             type: "normal",
             default: "yes",
@@ -233,7 +232,7 @@ Happy hacking!`);
 
     return {
       name,
-      airbnb,
+      linter,
       reactQuery,
       storybook,
       tailwind,

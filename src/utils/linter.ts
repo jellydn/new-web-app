@@ -21,7 +21,7 @@ class LinterApp extends Command {
     ux.action.start(LinterApp.description);
 
     await execaCommandSync(
-      `cd ${name} && yarn add -D typescript eslint prettier eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`,
+      `cd ${name} && yarn add -D typescript eslint prettier @trivago/prettier-plugin-sort-imports eslint-config-productsway @typescript-eslint/eslint-plugin @typescript-eslint/parser`,
     );
 
     const linter = `module.exports = {
@@ -37,6 +37,14 @@ class LinterApp extends Command {
       }
     };`;
     writeFileSync(`${name}/.eslintrc.cjs`, linter);
+
+    const prettier = `module.exports = {
+      "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+      "importOrderSeparation": true,
+      "importOrderSortSpecifiers": true,
+      "plugins": ["@trivago/prettier-plugin-sort-imports"]
+    };`;
+    writeFileSync(`${name}/.prettierrc.cjs`, prettier);
 
     await execaCommandSync(
       `cd ${name} && npx husky-init && npx mrm@2 lint-staged`,

@@ -3,7 +3,7 @@ import { Command, Flags, ux } from "@oclif/core";
 import { execaCommandSync } from "../exca";
 
 // https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier
-class AirbnbApp extends Command {
+class CypressApp extends Command {
   static description =
     "Install Cypress - Fast, easy and reliable testing for anything that runs in a browser.";
 
@@ -15,9 +15,9 @@ class AirbnbApp extends Command {
   };
 
   async run(): Promise<void> {
-    const { flags } = await this.parse(AirbnbApp);
+    const { flags } = await this.parse(CypressApp);
     const name = flags.name ?? "vite-react-ts-app";
-    ux.action.start(AirbnbApp.description);
+    ux.action.start(CypressApp.description);
 
     await execaCommandSync(`cd ${name} && yarn add cypress --dev`);
 
@@ -25,4 +25,4 @@ class AirbnbApp extends Command {
   }
 }
 
-export default AirbnbApp;
+export default CypressApp;
