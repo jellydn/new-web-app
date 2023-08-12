@@ -702,7 +702,7 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
-"@oclif/color@^1.0.10", "@oclif/color@^1.0.4", "@oclif/color@^1.0.9":
+"@oclif/color@^1.0.10", "@oclif/color@^1.0.9":
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.10.tgz#e83e3a30fffc93076281398cbeaa4f761c4df09e"
   integrity sha512-INWEDAL3SzzR3pIhkrqk22HV6JravLUeRZXAIpoQqIeLReauaibCVcNTzOlt0z0S8YrqRhksc54ZxZC4Oa8xBw==
@@ -909,7 +909,14 @@
     widest-line "^3.1.0"
     wrap-ansi "^6.2.0"
 
-"@oclif/plugin-help@5.2.16", "@oclif/plugin-help@^5.2.14":
+"@oclif/plugin-help@5.2.17":
+  version "5.2.17"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.17.tgz#72c549b1db8e16060ee4f320db96291ca341430f"
+  integrity sha512-8dhvATZZnkD8uq3etsvbVjjpdxiTqXTPjkMlU8ToQz09DL5BBzYApm65iTHFE0Vn9DPbKcNxX1d8YiF3ilgMOQ==
+  dependencies:
+    "@oclif/core" "^2.11.8"
+
+"@oclif/plugin-help@^5.2.14":
   version "5.2.16"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.16.tgz#bcb8ae96d3023ed3dfbbe38eba9f50f987caab4a"
   integrity sha512-MHtNpV1xBHSPcNAzUggQXwrBJUDoz8b01SnVFxFEmOHT3iYhvSir8DD0JSU+lhkyq1bNhF/lkaQJ9FtSuvwiyA==
@@ -925,12 +932,12 @@
     "@oclif/core" "^2.11.7"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@3.2.5":
-  version "3.2.5"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.2.5.tgz#4a497627948df98e80831d1bc283708a336a9ab3"
-  integrity sha512-1MCvzXHk1ESVXC/aH8XraHAmB/M8yA8YfbHaxgvvc2RGI/y9YWtGAbaamQULs6Rez98YQ+zMSgfNILL5ENkf8A==
+"@oclif/plugin-plugins@3.2.6":
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.2.6.tgz#8542c8ba1070ea8aa748e6c405a3c2dd3a410a48"
+  integrity sha512-MHRT3hpLLNl5bvsQOLILMwYbWJ4z/ZvHQMd9iff4jgNeWHf+a6OYB8HV0vIsIRmN0MGw7qyybMdnfSOudWHebg==
   dependencies:
-    "@oclif/color" "^1.0.4"
+    "@oclif/color" "^1.0.10"
     "@oclif/core" "^2.11.8"
     chalk "^4.1.2"
     debug "^4.3.4"
