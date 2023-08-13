@@ -952,13 +952,13 @@
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.1.30":
-  version "3.1.30"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.30.tgz#bbc9e02995a35e113d10d77fe279f8aabb5c978c"
-  integrity sha512-x8EKvKcfCbh8+rZkZT0AFOUrSkPqkmbS3Bz434nfDLUmOiGh5zPajvvPhb10uod78G5j9nCoSVsc1d+MRiU/Xw==
+"@oclif/plugin-update@3.1.31":
+  version "3.1.31"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.1.31.tgz#9a4738d4d40e856159939866d318e88fcf7e2443"
+  integrity sha512-sQpMWHRgXz9yxUjabkmhC3Wcv+IUb1pTmIwTggBWZmWPdOskmj9wrt3eedl6FTWBsFxxFTc07zbGjtp+xyO5AQ==
   dependencies:
     "@oclif/color" "^1.0.10"
-    "@oclif/core" "^2.11.7"
+    "@oclif/core" "^2.11.8"
     cross-spawn "^7.0.3"
     debug "^4.3.1"
     filesize "^6.1.0"
