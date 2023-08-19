@@ -17,7 +17,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "7.45.4",
-    "@tanstack/react-query": "4.32.6"
+    "@tanstack/react-query": "4.33.0"
   },
   "devDependencies": {
     "@babel/core": "7.22.10",
