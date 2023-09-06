@@ -1028,10 +1028,10 @@
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.2.2":
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.2.tgz#bda46460f8223b5259f48aca776bde16d88aa69e"
-  integrity sha512-SIW91KYLT/eunUy0j9j7Ts2X37gjsB6N+WNYWasIhIRfbfyFd9ImBpvKfagmcDKXjxtIsLAZ06JPWgfAgbrF9A==
+"@oclif/plugin-update@3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.3.tgz#133b42efff532d62be1f260612fd2c23ae44be25"
+  integrity sha512-JVKwp4ysG9GU4RmG59MZYMunz8onRI+wEQzJThyYkUFd0VfZviYt2FHsyoNtxi30l0tInC8APgKp1pCCO4e+FQ==
   dependencies:
     "@oclif/core" "^2.11.8"
     chalk "^4"
