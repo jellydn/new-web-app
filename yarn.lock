@@ -1010,15 +1010,14 @@
     chalk "^4"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.4.0.tgz#da0499f9d3ee41812f2c887cc30808ad0cb10a95"
-  integrity sha512-oErF7B+75TEheNWMvVfrCtlaHhnCnx41B4pN6cDQWeW4AZc11N45aNYFU55jPN0q20nUkzlVjhb/5M4zMDqQ7w==
+"@oclif/plugin-plugins@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.4.2.tgz#63888867b9a29f66a38560e175cea3709fc934d4"
+  integrity sha512-0goaZY8XOk6gH/c5nZ4k3DYnNdY0ZHCqe2bvSaT7rH2UCgeo/sS70gGYqbnn+TVIVxN6mIL9ogzsLtpQy02U3A==
   dependencies:
     "@oclif/core" "^2.11.10"
     chalk "^4.1.2"
     debug "^4.3.4"
-    fs-extra "^9.0"
     http-call "^5.2.2"
     load-json-file "^5.3.0"
     npm "9.6.7"
@@ -1029,10 +1028,10 @@
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.0.tgz#769d1ab02e87e943d60c5d3b2a03711853324770"
-  integrity sha512-naQIw/sjbNBNdYnoQOudYMJc1Im2fpyQAh87ZN8tR/6Wuf4fyxfLUENm8Gy8jqBM3GN4rw/yg0uW7tDH5wY0qg==
+"@oclif/plugin-update@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.2.tgz#bda46460f8223b5259f48aca776bde16d88aa69e"
+  integrity sha512-SIW91KYLT/eunUy0j9j7Ts2X37gjsB6N+WNYWasIhIRfbfyFd9ImBpvKfagmcDKXjxtIsLAZ06JPWgfAgbrF9A==
   dependencies:
     "@oclif/core" "^2.11.8"
     chalk "^4"
@@ -3406,7 +3405,7 @@ fs-extra@^8.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0, fs-extra@^9.0.1:
+fs-extra@^9.0.1:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
@@ -5701,10 +5700,10 @@ object.values@^1.1.6:
     define-properties "^1.2.0"
     es-abstract "^1.22.1"
 
-oclif@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.14.0.tgz#d0a0cd2f4c3e6135aff6de1733ff0704000a95b3"
-  integrity sha512-IlTb6WcbL7DxKSBp/TlC+wj7FhelIVu5AHBoW5+ABJ9GjXMv27sAY6F+RfEXqQaMu8OwRP9t/1sAKR+3wMlX8w==
+oclif@3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.15.0.tgz#8e421f97cddd0c355cbd0aad3b68410a92a480b8"
+  integrity sha512-iwIjseO6Zuw1X66bN268yVuT6U7Qfwcp4CP4FZ/fd/a81eqQ6CTSCfeInjn/uDhfC/U01KrbNZPIZCMkjWHzxA==
   dependencies:
     "@oclif/core" "^2.11.4"
     "@oclif/plugin-help" "^5.2.14"
