@@ -994,7 +994,14 @@
     widest-line "^3.1.0"
     wrap-ansi "^6.2.0"
 
-"@oclif/plugin-help@5.2.19", "@oclif/plugin-help@^5.2.14":
+"@oclif/plugin-help@5.2.20":
+  version "5.2.20"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.20.tgz#4035a0ac231f95fb8e334da342175e3ca00f6abc"
+  integrity sha512-u+GXX/KAGL9S10LxAwNUaWdzbEBARJ92ogmM7g3gDVud2HioCmvWQCDohNRVZ9GYV9oKwZ/M8xwd6a1d95rEKQ==
+  dependencies:
+    "@oclif/core" "^2.15.0"
+
+"@oclif/plugin-help@^5.2.14":
   version "5.2.19"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.19.tgz#be8019730c6540eefeb30e95fe13ff0b91364bf0"
   integrity sha512-gf6/dFtzMJ8RA4ovlBCBGJsZsd4jPXhYWJho+Gh6KmA+Ev9LupoExbE0qT+a2uHJyHEvIg4uX/MBW3qdERD/8g==
@@ -1010,10 +1017,10 @@
     chalk "^4"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@3.8.2":
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.8.2.tgz#5089a56cc616ed8124a9f9a15012abd510bd7517"
-  integrity sha512-ajQGE6k5gti4p//J9qPBo1RjA4RICJhrqQf9eRVFtuL7QQY2bFkpxoXPi4jx0W0AcLwJ1kC6c2ayxMlcHSescA==
+"@oclif/plugin-plugins@3.8.3":
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.8.3.tgz#e428678274a47961d88320170da906723c2e0050"
+  integrity sha512-dUpTfqwNfcCSnGfk8RV/BOouyvc2zd7vYY5ORdTpnm+LmDG1zT+045r5k0WqynO68ubh1isVZvfcBT6zgW3k3A==
   dependencies:
     "@oclif/core" "^2.15.0"
     chalk "^4.1.2"
@@ -1028,10 +1035,10 @@
     validate-npm-package-name "^5.0.0"
     yarn "^1.22.18"
 
-"@oclif/plugin-update@3.2.3":
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.3.tgz#133b42efff532d62be1f260612fd2c23ae44be25"
-  integrity sha512-JVKwp4ysG9GU4RmG59MZYMunz8onRI+wEQzJThyYkUFd0VfZviYt2FHsyoNtxi30l0tInC8APgKp1pCCO4e+FQ==
+"@oclif/plugin-update@3.2.4":
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-update/-/plugin-update-3.2.4.tgz#02ebf1e9f9a4b004773865c06f54d8c5c46eea0f"
+  integrity sha512-41G7NTKND+yTpb8LHlvlMIcNoaEUIIJuEwju9igL+ME/pN/53opeXgFV2IjjeFiexXj50OfesY9OQ6lqOZHw+g==
   dependencies:
     "@oclif/core" "^2.11.8"
     chalk "^4"
