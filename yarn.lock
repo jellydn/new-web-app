@@ -894,10 +894,10 @@
     chalk "^4"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.9.2.tgz#3a9160ec0f364a269064159ace1753ded23cc66e"
-  integrity sha512-Fyi4tySKKLVcPaSgp/2UlzPuqKO8EwKS1Mr26YZQcPlzvW2VsHLdJojgj/8JlgUX98X0VVPBH0wWcSOwMconAw==
+"@oclif/plugin-plugins@3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-3.9.3.tgz#5678e3beaa73fd7333dcb4efc44141f593c86ba7"
+  integrity sha512-hsm2mTL6uCP79WpltC+G1gkOrn2ckWXUnSi4UmF0eKbddOxJ9vakekuQpj/zlRJkXBNWaXlAskzJmnRoCGT+AQ==
   dependencies:
     "@oclif/core" "^2.15.0"
     chalk "^4.1.2"
