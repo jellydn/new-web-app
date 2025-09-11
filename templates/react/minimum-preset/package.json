@@ -25,7 +25,7 @@
     "lint-staged": "14.0.1",
     "prettier": "3.6.2",
     "typescript": "5.9.2",
-    "vite": "5.4.19"
+    "vite": "5.4.20"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
