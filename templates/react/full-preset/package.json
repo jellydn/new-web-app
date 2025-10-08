@@ -16,17 +16,17 @@
     "@hookform/devtools": "4.4.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-hook-form": "7.62.0",
-    "@tanstack/react-query": "5.85.0"
+    "react-hook-form": "7.64.0",
+    "@tanstack/react-query": "5.90.2"
   },
   "devDependencies": {
-    "@babel/core": "7.28.0",
+    "@babel/core": "7.28.4",
     "@storybook/addon-actions": "7.6.20",
     "@storybook/addon-essentials": "7.6.20",
     "@storybook/addon-links": "7.6.20",
     "@storybook/react": "7.6.20",
     "@trivago/prettier-plugin-sort-imports": "4.3.0",
-    "@types/react": "18.3.23",
+    "@types/react": "18.3.26",
     "@types/react-dom": "18.3.7",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
@@ -40,8 +40,8 @@
     "lint-staged": "14.0.1",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
-    "tailwindcss": "3.4.17",
-    "typescript": "5.9.2",
+    "tailwindcss": "3.4.18",
+    "typescript": "5.9.3",
     "vite": "5.4.20"
   },
   "lint-staged": {
