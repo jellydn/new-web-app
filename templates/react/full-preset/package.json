@@ -16,11 +16,11 @@
     "@hookform/devtools": "4.4.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-hook-form": "7.64.0",
-    "@tanstack/react-query": "5.90.2"
+    "react-hook-form": "7.66.0",
+    "@tanstack/react-query": "5.90.6"
   },
   "devDependencies": {
-    "@babel/core": "7.28.4",
+    "@babel/core": "7.28.5",
     "@storybook/addon-actions": "7.6.20",
     "@storybook/addon-essentials": "7.6.20",
     "@storybook/addon-links": "7.6.20",
