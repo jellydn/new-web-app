@@ -62,7 +62,7 @@
     "@oclif/dev-cli": "1.26.10",
     "@swc/core": "1.15.8",
     "@swc/helpers": "0.5.18",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/degit": "2.8.6",
     "@types/node": "20.19.29",
     "@types/shelljs": "0.10.0",
